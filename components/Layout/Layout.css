@@ -15,7 +15,7 @@
 }
 
 .banner {
-  background-image: url('./assets/dukeApoBanner.png');
+  background-image: url('../Assets/DukeApoBanner.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }

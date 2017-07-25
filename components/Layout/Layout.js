@@ -13,7 +13,7 @@ import cx from 'classnames';
 import Header from './Header';
 import Footer from '../Footer';
 import s from './Layout.css';
-import banner from './assets/dukeApoBanner.png';
+import banner from '../Assets/DukeApoBanner.png';
 
 class Layout extends React.Component {
 
