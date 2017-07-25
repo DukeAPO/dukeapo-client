@@ -13,3 +13,9 @@
   max-width: 1000px;
   width: 100%;
 }
+
+.banner {
+  background-image: url('./assets/dukeApoBanner.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

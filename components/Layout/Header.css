@@ -10,11 +10,11 @@
 
 .row {
   padding: 40px;
+  background: #fff;
 }
 
-.title {
-  color: #fff;
-  text-decoration: none;
+.image {
+  height: inherit;
 }
 
 @media screen and (max-width: 1024px) {
