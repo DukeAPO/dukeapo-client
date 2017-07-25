@@ -103,7 +103,7 @@ $ yarn run publish                  # Builds and deployes the app to Firebase
 
 1. Always update your local copy of the project with the most up-to-date version on GitHub: `git pull origin master`
 
-When you do make changes, do this on your own branch, not on master.
+> When you do make changes, do this on your own branch, not on master.
 
 2. Make a new branch and change to it with: `git checkout -b <nameOfBranch>`
 
