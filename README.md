@@ -8,6 +8,8 @@ Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/mast
 
 > @author: Brian Lin (ask me if anything is unclear or if you get weird error messages that Googling can't fix)
 
+> Also make sure your read through our [Git Workflow](#our-git-workflow) before submitting any code! (ask Brian for clarification since it's a bit complicated)
+
 - [Downloading the project](#downloading-the-project)
   - [Basic Terminal commands](#basic-terminal-commands)
   - [Clone the project](#clone-the-project)
@@ -18,7 +20,7 @@ Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/mast
 - [Running the project](#running-the-project)
 - [Testing](#testing)
 - [Deploying the project](#deploying-the-project)
-- [Using Git](#using-git)
+- [Our Git Workflow](#our-git-workflow)
 
 ## Downloading the project
 
@@ -114,7 +116,7 @@ Whenever you make changes and think they look good, ask another member of the te
 $ yarn run publish                  # Builds and deployes the app to Firebase
 ```
 
-## Using Git
+## Our Git Workflow
 
 ### Step 1: Make some changes on a new branch
 
