@@ -31,6 +31,8 @@ You can look up entire sheets of these (they're super useful) but here's a few t
 
 ### Clone (download) the project
 
+Open up Terminal and type in `git`. You'll probably have to install Apple's xcode command line tools.
+
 cd (change directory) to or make a new folder where you want to hold all your GitHub projects. I just make a `GitHub` folder somewhere and put all my stuff there. Once you're inside that folder, `clone` the project from our central GitHub repository down to your computer:
 
 `git clone https://github.com/DukeAPO/dukeapo-client.git`
