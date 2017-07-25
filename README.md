@@ -6,7 +6,7 @@ Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/mast
 
 ## Table of Contents
 
-@author: Brian Lin (ask me if anything is unclear or if you get weird error messages that Googling can't fix)
+> @author: Brian Lin (ask me if anything is unclear or if you get weird error messages that Googling can't fix)
 
 - [Downloading the project](#downloading-the-project)
   - [Basic Terminal commands](#basic-terminal-commands)
