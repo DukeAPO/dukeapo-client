@@ -4,6 +4,19 @@ Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/mast
 
 > The most annoying part of any project is getting things installed so I'll do a quick write-up of everything I had to do to get started. These instructions are for Mac.
 
+## Table of Contents
+
+- [Downloading the project](#downloading-the-project)
+  - [Basic Terminal commands](#basic-terminal-commands)
+  - [Clone the project](#clone-the-project)
+- [Installing stuff](#installing-stuff)
+  - [Homebrew](#homebrew)
+  - [Yarn](#yarn)
+  - [Node](#node)
+- [Running the project](#running-the-project)
+- [Testing](#testing)
+- [Deploying the project](#deploying-the-project)
+- [Git](#git)
 ## Downloading the project
 
 First, open up Terminal. You can just do `CMD` + `Space` and type "Terminal" in the search bar. I recommend pinning Terminal to your dock.
@@ -29,7 +42,7 @@ You can look up entire sheets of these (they're super useful) but here's a few t
 
 `rm <name of file>` - deletes a file
 
-### Clone (download) the project
+### Clone the project
 
 Open up Terminal and type in `git`. You'll probably have to install Apple's xcode command line tools.
 
