@@ -29,6 +29,7 @@ First, open up Terminal. You can just do `CMD` + `Space` and type "Terminal" in 
 You can look up entire sheets of these (they're super useful) but here's a few that I use a lot:
 
 `ls` - lists what files are in your current folder
+
 `open .` - opens the current folder in Finder 
 
 `cd <name of folder>` - changes directory (ie folder) to whatever you specify
