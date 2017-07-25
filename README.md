@@ -96,3 +96,52 @@ Whenever you make changes and think they look good, ask another member of the te
 ```shell
 $ yarn run publish                  # Builds and deployes the app to Firebase
 ```
+
+# Using Git
+
+## Step 1: Make some changes on a new branch
+
+1. Always update your local copy of the project with the most up-to-date version on GitHub: `git pull origin master`
+
+When you do make changes, do this on your own branch, not on master.
+
+2. Make a new branch and change to it with: `git checkout -b <nameOfBranch>`
+
+> (Optional): list branches with: `git branch`, change branches with: `git checkout <nameOfBranch>`
+
+3. Make some changes. 
+
+> (Optional): list any files you've modified with: `git st` (short for `git status`), look at specific changes you've made to these files with: `git diff`
+
+4. Run `yarn lint` to check for syntax/spelling/spacing errors. Fix any errors (or ask Brian).
+
+5. Run `yarn test` to make sure all unit tests pass. Fix any errors.
+
+6. Add your changed files to the staging area: `git add <nameOfFile>`
+
+7. Commit these changes with a message: `git commit -m "message goes here"`
+
+8. Push to the repository (on GitHub): `git push origin <nameOfYourBranch>`
+
+
+## Step 2: Code review
+
+1. Make a pull request from your branch into master (it's a button on GitHub, ask Brian). Write a description and assign a reviewer(s) to look it over. 
+
+2. Read comments. Make any changes.
+
+3. Lint and test as before. 
+
+3. `git add <stuff>` + `git commit -m "message goes here"` + `git push origin <nameOfBranch>` as before.
+
+4. Repeat until your reviewer says it looks good!
+
+## Step 3: Move your code into master
+
+1. Hit `squash and merge` button on GitHub. 
+
+2. Delete your branch.
+
+3. Close any issues you solved.
+
+
