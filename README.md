@@ -2,8 +2,6 @@
 
 Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/master/README.md)
 
-# Getting started
-
 > The most annoying part of any project is getting things installed so I'll do a quick write-up of everything I had to do to get started. These instructions are for Mac.
 
 ## Downloading the project
@@ -55,6 +53,10 @@ Install Yarn with:
 
 `brew install yarn` (that's why we got homebrew)
 
+Now use Yarn to install all of our dependencies:
+
+`yarn install`
+
 ### Node
 
 You'll also need **Node**, which runs our project. Just google "install node" and download the appropriate version (should just be the latest Mac one)
@@ -92,8 +94,3 @@ Whenever you make changes and think they look good, ask another member of the te
 ```shell
 $ yarn run publish                  # Builds and deployes the app to Firebase
 ```
-
-
-
-
-
