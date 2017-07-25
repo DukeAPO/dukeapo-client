@@ -110,9 +110,9 @@ Whenever you make changes and think they look good, ask another member of the te
 $ yarn run publish                  # Builds and deployes the app to Firebase
 ```
 
-# Using Git
+## Using Git
 
-## Step 1: Make some changes on a new branch
+### Step 1: Make some changes on a new branch
 
 1. Always update your local copy of the project with the most up-to-date version on GitHub: `git pull origin master`
 
@@ -137,7 +137,7 @@ $ yarn run publish                  # Builds and deployes the app to Firebase
 8. Push to the repository (on GitHub): `git push origin <nameOfYourBranch>`
 
 
-## Step 2: Code review
+### Step 2: Code review
 
 1. Make a pull request from your branch into master (it's a button on GitHub, ask Brian). Write a description and assign a reviewer(s) to look it over. 
 
@@ -149,7 +149,7 @@ $ yarn run publish                  # Builds and deployes the app to Firebase
 
 4. Repeat until your reviewer says it looks good!
 
-## Step 3: Move your code into master
+### Step 3: Move your code into master
 
 1. Hit `squash and merge` button on GitHub. 
 
