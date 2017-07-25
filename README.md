@@ -16,7 +16,8 @@ Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/mast
 - [Running the project](#running-the-project)
 - [Testing](#testing)
 - [Deploying the project](#deploying-the-project)
-- [Git](#git)
+- [Using Git](#using-git)
+
 ## Downloading the project
 
 First, open up Terminal. You can just do `CMD` + `Space` and type "Terminal" in the search bar. I recommend pinning Terminal to your dock.
