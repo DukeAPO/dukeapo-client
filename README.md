@@ -30,7 +30,7 @@ You can look up entire sheets of these (they're super useful) but here's a few t
 
 `ls` - lists what files are in your current folder
 
-`open .` - opens the current folder in Finder 
+`open .` - opens the current folder in Finder. Note: `.` = current folder. So you can also do `open <nameOfFolder>` to open a folder that you see with `ls`.
 
 `cd <name of folder>` - changes directory (ie folder) to whatever you specify
 
