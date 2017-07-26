@@ -12,14 +12,16 @@ import React from 'react';
 import Link from '../Link';
 import s from './Navigation.css';
 import FlatButton from 'material-ui/FlatButton';
+var scrollIntoView = require('scroll-into-view');
 
 class NavButton extends React.Component {
+
   render() {
     return (
-      <FlatButton>
-        <Link className={s.link} to={this.props.to}>
+      <FlatButton onClick={() => scrollIntoView(document.getElementById(this.props.scrollToId))}>
+        <a className={s.label}>
           {this.props.label}
-        </Link>
+        </a>
       </FlatButton>
     );
   }
@@ -27,12 +29,13 @@ class NavButton extends React.Component {
 
 class Navigation extends React.Component {
   render() {
+    const navs = [];
+    this.props.navigation.forEach(function(navItem){
+      navs.push(<NavButton label={navItem.label} scrollToId={navItem.scrollToId} />);
+    });
     return (
       <nav>
-        <NavButton label={"Home"} to={"/"} />
-        <NavButton label={"Stats"} to={"/stats"} />
-        <NavButton label={"What We Do"} to={"/whatWeDo"} />
-        <NavButton label={"Recruitment"} to={"/recruitment"} />
+        {navs}
       </nav>
     );
   }
