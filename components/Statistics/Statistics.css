@@ -1,3 +1,12 @@
-.statistics {
+.container {
+    background: #065bbe;
+    overflow: auto;
     text-align: center;
+}
+
+.title {
+  font-family: "Avenir";
+  font-weight: medium;
+  font-size: 48pt;
+  color: #FFFFFF;
 }

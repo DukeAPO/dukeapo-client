@@ -1,18 +1,22 @@
 .container {
   text-align: center;
-  background-color: #065BBE;
 }
 
 .number {
   font-family: "Avenir";
   font-weight: medium;
-  font-size: 48pt;
+  font-size: 36pt;
   color: #FFFFFF;
 }
 
 .description {
   font-family: "Avenir";
   font-weight: normal;
-  font-size: 30pt;
+  font-size: 24pt;
   color: #FFFFFF;
+}
+
+.icon {
+  height: 128px;
+  width: 128px;
 }
