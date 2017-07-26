@@ -13,24 +13,23 @@ import Navigation from './Navigation';
 import Link from '../Link';
 import s from './Header.css';
 import logo from '../Assets/DukeApoLogoBlack.png'
+import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
+
 
 class Header extends React.Component {
 
-  componentDidMount() {
-    window.componentHandler.upgradeElement(this.root);
-  }
-
-  componentWillUnmount() {
-    window.componentHandler.downgradeElements(this.root);
-  }
-
   render() {
     return (
-      <header className={`mdl-layout__header ${s.header}`} ref={node => (this.root = node)}>
-        <div className={`mdl-layout__header-row ${s.row}`}>
-          <img className={s.image} src={logo} />
-          <div className="mdl-layout-spacer" />
-          <Navigation />
+      <header className={s.header}>
+        <div className={s.container}>
+          <Toolbar style={{backgroundColor: '#fff'}}>
+            <ToolbarGroup firstChild={true}>
+              <img className={s.logo} src={logo} />
+            </ToolbarGroup>
+            <ToolbarGroup>
+              <Navigation/>
+            </ToolbarGroup>
+          </Toolbar>
         </div>
       </header>
     );
