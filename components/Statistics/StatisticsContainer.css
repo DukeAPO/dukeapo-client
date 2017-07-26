@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  background-color: #065BBE;
+}
+
+.number {
+  font-family: "Avenir";
+  font-weight: medium;
+  font-size: 48pt;
+  color: #FFFFFF;
+}
+
+.description {
+  font-family: "Avenir";
+  font-weight: normal;
+  font-size: 30pt;
+  color: #FFFFFF;
+}

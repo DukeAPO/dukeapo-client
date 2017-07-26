@@ -15,7 +15,7 @@ function Footer() {
   return (
     <footer className="mdl-mini-footer">
       <div className="mdl-mini-footer__left-section">
-        <div className="mdl-logo">Duke University - Alpha Phi Omega - Lambda Nu Chapter</div>
+        <div className="mdl-logo">Duke University - Alpha Phi Omega (&Alpha; &Phi; &Omega;) - Lambda Nu (&Lambda; &Nu;) Chapter</div>
       </div>
       <div className="mdl-mini-footer__right-section">
         <ul className="mdl-mini-footer__link-list">
