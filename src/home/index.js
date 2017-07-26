@@ -20,11 +20,30 @@ class HomePage extends React.Component {
   };
 
   render() {
+    const statistics = <div id={"Stats"}><Statistics/></div>;
+    const navigation = [
+      {
+        label: 'Home',
+        scrollToId: ''
+      },
+      {
+        label: 'Stats',
+        scrollToId: 'Stats'
+      },
+      {
+        label: 'What We Do',
+        scrollToId: ''
+      },
+      {
+        label: 'Recruitment',
+        scrollToId: ''
+      }
+    ];
     return (
       <div>
-        <Header/>
+        <Header navigation={navigation}/>
         <Banner/>
-        <Statistics/>
+        {statistics}
         <Footer/>
       </div>
     );

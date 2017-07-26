@@ -1,5 +1,5 @@
 import React from 'react';
-import {Table, TableBody} from 'material-ui/Table';
+import {Table, TableBody, TableRowColumn} from 'material-ui/Table';
 import s from './Statistics.css';
 import StatisticsContainer from './StatisticsContainer.js';
 import logo from '../Assets/DukeApoLogoBlack.png';
@@ -14,11 +14,21 @@ class Statistics extends React.Component {
         </h1>
         <Table style={{backgroundColor: '#065bbe'}}>
           <TableBody displayRowCheckbox={false}>
-            <StatisticsContainer number={100} description={"service hours"} src={logo}/>
-            <StatisticsContainer number={100} description={"service hours"} src={logo}/>
-            <StatisticsContainer number={100} description={"service hours"} src={logo}/>
-            <StatisticsContainer number={100} description={"service hours"} src={logo}/>
-            <StatisticsContainer number={100} description={"service hours"} src={logo}/>
+            <TableRowColumn>
+              <StatisticsContainer number={100} description={"service hours"} src={logo}/>
+            </TableRowColumn>
+            <TableRowColumn>
+              <StatisticsContainer number={100} description={"service hours"} src={logo}/>
+            </TableRowColumn>
+            <TableRowColumn>
+              <StatisticsContainer number={100} description={"service hours"} src={logo}/>
+            </TableRowColumn>
+            <TableRowColumn>
+              <StatisticsContainer number={100} description={"service hours"} src={logo}/>
+            </TableRowColumn>
+            <TableRowColumn>
+              <StatisticsContainer number={100} description={"service hours"} src={logo}/>
+            </TableRowColumn>
           </TableBody>
         </Table>
       </div>
