@@ -20,12 +20,23 @@ import store from './store';
 import router from './router';
 import history from './history';
 
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+injectTapEventPlugin();
+
 let routes = require('./routes.json').default; // Loaded with utils/routes-loader.js
 
 const container = document.getElementById('container');
 
 function renderComponent(component) {
-  ReactDOM.render(<Provider store={store}>{component}</Provider>, container);
+  ReactDOM.render(
+    <MuiThemeProvider>
+      <Provider store={store}>
+        {component}
+      </Provider>
+    </MuiThemeProvider>,
+  container);
 }
 
 // Find and render a web page matching the current URL path,

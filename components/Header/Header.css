@@ -8,21 +8,17 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-.row {
-  padding: 40px;
-  background: #fff;
+
+.logo {
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.image {
-  height: inherit;
+.container {
+  padding: 10px;
+  padding-left: 50px;
 }
 
-@media screen and (max-width: 1024px) {
-  .header {
-    display: flex;
-  }
-
-  .row {
-    padding: 0 16px;
-  }
+.header {
+  width: 100%;
 }

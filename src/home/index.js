@@ -9,27 +9,22 @@
  */
 
 import React, { PropTypes } from 'react';
-import Layout from '../../components/Layout';
-import s from './styles.css';
-import { title, html } from './index.md';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Banner from '../../components/Banner'
 
 class HomePage extends React.Component {
 
   static propTypes = {
   };
 
-  componentDidMount() {
-    document.title = title;
-  }
-
   render() {
     return (
-      <Layout className={s.content}>
-        <div
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Layout>
+      <div>
+        <Header/>
+        <Banner/>
+        <Footer/>
+      </div>
     );
   }
 
