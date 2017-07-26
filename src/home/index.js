@@ -11,7 +11,8 @@
 import React, { PropTypes } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Banner from '../../components/Banner'
+import Banner from '../../components/Banner';
+import Statistics from '../../components/Statistics';
 
 class HomePage extends React.Component {
 
@@ -23,6 +24,7 @@ class HomePage extends React.Component {
       <div>
         <Header/>
         <Banner/>
+        <Statistics/>
         <Footer/>
       </div>
     );
