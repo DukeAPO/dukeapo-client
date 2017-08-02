@@ -9,26 +9,24 @@
  */
 
 import React from 'react';
+import { Toolbar, ToolbarGroup } from 'material-ui/Toolbar';
 import Navigation from './Navigation';
-import Link from '../Link';
 import s from './Header.css';
-import logo from '../Assets/DukeApoLogoBlack.png'
-import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
-
+import logo from '../Assets/DukeApoLogoBlack.png';
 
 class Header extends React.Component {
 
   render() {
     return (
-      <header className={s.header}>
-        <div className={s.container}>
-          <Toolbar style={{backgroundColor: '#fff'}}>
+      <header className={ s.header }>
+        <div className={ s.container }>
+          <Toolbar style={ { backgroundColor: '#fff' } }>
             <ToolbarGroup firstChild={true}>
-              <img className={s.logo} src={logo} />
+              <img className={ s.logo } src={logo} alt="APO logo"/>
             </ToolbarGroup>
-            <div className={s.toolbarNavigation}>
+            <div className = { s.toolbarNavigation }>
               <ToolbarGroup>
-                <Navigation navigation={this.props.navigation}/>
+                <Navigation navigation={ this.props.navigation }/>
               </ToolbarGroup>
             </div>
           </Toolbar>
