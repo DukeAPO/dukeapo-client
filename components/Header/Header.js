@@ -26,9 +26,11 @@ class Header extends React.Component {
             <ToolbarGroup firstChild={true}>
               <img className={s.logo} src={logo} />
             </ToolbarGroup>
-            <ToolbarGroup>
-              <Navigation navigation={this.props.navigation}/>
-            </ToolbarGroup>
+            <div className={s.toolbarNavigation}>
+              <ToolbarGroup>
+                <Navigation navigation={this.props.navigation}/>
+              </ToolbarGroup>
+            </div>
           </Toolbar>
         </div>
       </header>
