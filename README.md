@@ -1,5 +1,5 @@
 # Duke APO Website
-The website can be found here: [dukeapo.org](dukeapo.org)
+The website can be found here: [dukeapo.org](https://dukeapo.org/)
 
 Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/master/README.md)
 
