@@ -1,4 +1,4 @@
-# Duke APO Website
+# Duke APO Website (dukeapo.org)
 
 Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/master/README.md)
 
