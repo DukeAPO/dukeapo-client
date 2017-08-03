@@ -8,11 +8,19 @@
 }
 
 .container {
-  height: 100%;
-  width: auto;
-  display: flex;
-  flex-direction: column;
+  margin: 20px;
 }
+
+@media screen and (min-width: 930px) {
+  .container {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
 
 .description {
   font-family: "Avenir";

@@ -33,33 +33,76 @@ class WhatWeDoImage extends React.Component {
 
 class WhatWeDoBlock extends React.Component {
 
+  constructor() {
+    super();
+    this.state = {
+      width: 0,
+      height: 0
+    };
+    this.resizeState = this.resizeState.bind(this);
+  }
+
+  resizeState() {
+    this.setState({width: window.innerWidth, height: window.innerHeight});
+  }
+
+  componentWillMount() {
+    this.resizeState();
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resizeState);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resizeState);
+  }
+
   render() {
-    const description = (
-      <TableRowColumn style={{width: '30%'}}>
-        <WhatWeDoDescription title={this.props.title}
-          information={this.props.information} color={this.props.color}/>
-      </TableRowColumn>
-    );
-    const image = (
-      <TableRowColumn style={{width: '60%'}}>
-        <WhatWeDoImage src={this.props.src}/>
-      </TableRowColumn>
-    );
+    const widthCutoff = 930;
+    const heightCutoff = 1024;
     var order = undefined;
-    if(this.props.orientation === 'lr'){
+    const description = <WhatWeDoDescription title={this.props.title}
+      information={this.props.information} color={this.props.color}/>;
+    const image = <WhatWeDoImage src={this.props.src}/>;
+    if (this.state.width < widthCutoff){
       order = (
-        <TableRow>
-          {description}
-          {image}
-        </TableRow>
+        <div>
+          <TableRow style={{borderBottom: 'none'}}>
+            {description}
+          </TableRow>
+          <TableRow style={{borderTop: 'none'}}>
+            {image}
+          </TableRow>
+        </div>
       );
-    }else if(this.props.orientation === 'rl'){
-      order = (
-        <TableRow>
-          {image}
+    }
+    else{
+      const descriptionSmall = (
+        <TableRowColumn style={{width: '30%'}}>
           {description}
-        </TableRow>
+        </TableRowColumn>
       );
+      const imageBig = (
+        <TableRowColumn style={{width: '70%'}}>
+          {image}
+        </TableRowColumn>
+      );
+      if(this.props.orientation === 'lr'){
+        order = (
+          <TableRow>
+            {descriptionSmall}
+            {imageBig}
+          </TableRow>
+        );
+      }else if(this.props.orientation === 'rl'){
+        order = (
+          <TableRow>
+            {imageBig}
+            {descriptionSmall}
+          </TableRow>
+        );
+      }
     }
 
     return (
