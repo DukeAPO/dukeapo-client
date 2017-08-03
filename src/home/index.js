@@ -14,7 +14,7 @@ import Footer from '../../components/Footer';
 import Image from '../../components/Image';
 import Statistics from '../../components/Statistics';
 import WhatWeDo from '../../components/WhatWeDo';
-import banner from '../../components/Assets/DukeApoBanner.png'
+import banner from '../../components/Assets/DukeApoBanner.png';
 
 class HomePage extends React.Component {
 

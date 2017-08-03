@@ -20,6 +20,9 @@ import store from './store';
 import router from './router';
 import history from './history';
 
+import Favicon from 'react-favicon';
+import crest from '../components/Assets/APOCrest.png';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -31,11 +34,14 @@ const container = document.getElementById('container');
 
 function renderComponent(component) {
   ReactDOM.render(
-    <MuiThemeProvider>
-      <Provider store={store}>
-        {component}
-      </Provider>
-    </MuiThemeProvider>,
+    <div>
+      <Favicon url={[crest]}/>
+      <MuiThemeProvider>
+        <Provider store={store}>
+          {component}
+        </Provider>
+      </MuiThemeProvider>
+    </div>,
   container);
 }
 
