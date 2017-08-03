@@ -11,8 +11,10 @@
 import React, { PropTypes } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Banner from '../../components/Banner';
+import Image from '../../components/Image';
 import Statistics from '../../components/Statistics';
+import WhatWeDo from '../../components/WhatWeDo';
+import banner from '../../components/Assets/DukeApoBanner.png'
 
 class HomePage extends React.Component {
 
@@ -21,6 +23,7 @@ class HomePage extends React.Component {
 
   render() {
     const statistics = <div id={"Stats"}><Statistics/></div>;
+    const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>
     const navigation = [
       {
         label: 'Home',
@@ -32,7 +35,7 @@ class HomePage extends React.Component {
       },
       {
         label: 'What We Do',
-        scrollToId: ''
+        scrollToId: 'WhatWeDo'
       },
       {
         label: 'Recruitment',
@@ -42,8 +45,9 @@ class HomePage extends React.Component {
     return (
       <div>
         <Header navigation={navigation}/>
-        <Banner/>
+        <Image src={banner}/>
         {statistics}
+        {whatWeDo}
         <Footer/>
       </div>
     );
