@@ -2,7 +2,7 @@ import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
 import s from './WhatWeDo.css';
 import shadow from '../Image/Image.css';
-import banner from '../Assets/DukeApoBanner.png'
+import banner from '../Assets/DukeApoBanner.png';
 
 
 class WhatWeDoDescription extends React.Component {
