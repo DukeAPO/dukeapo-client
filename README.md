@@ -45,6 +45,8 @@ It should make a new folder called `dukeapo-client`. Type `ls` and see if it's t
 
 Now that you're in the project, time to install a bunch of (random) stuff that makes it run.
 
+Note: do all installation in the `dukeapo-client` folder because all the installation files are there.
+
 ### Homebrew
 
 First thing you need is **homebrew** which makes installing *other* stuff more easy. Go to their [website](https://brew.sh/) and copy the Terminal script and hit `enter` to run it. 
@@ -66,6 +68,10 @@ Now use Yarn to install all of our dependencies:
 You'll also need **Node**, which runs our project. Just google "install node" and download the appropriate version (should just be the latest Mac one)
 
 Woo nice, you're done with installation!
+
+## Writing code
+
+You'll want a text editor for writing code. I recommend using Sublime Text which is free. 
 
 ## Running the project
 
