@@ -45,6 +45,8 @@ It should make a new folder called `dukeapo-client`. Type `ls` and see if it's t
 
 Now that you're in the project, time to install a bunch of (random) stuff that makes it run.
 
+Note: do all installation in the `dukeapo-client` folder because all the installation files are there.
+
 ### Homebrew
 
 First thing you need is **homebrew** which makes installing *other* stuff more easy. Go to their [website](https://brew.sh/) and copy the Terminal script and hit `enter` to run it. 
@@ -66,6 +68,10 @@ Now use Yarn to install all of our dependencies:
 You'll also need **Node**, which runs our project. Just google "install node" and download the appropriate version (should just be the latest Mac one)
 
 Woo nice, you're done with installation!
+
+## Writing code
+
+You'll want a text editor for writing code. I recommend using Sublime Text which is free. 
 
 ## Running the project
 
@@ -120,11 +126,13 @@ $ firebase deploy             # Deploys public folder to firebase
 
 5. Run `yarn test` to make sure all unit tests pass. Fix any errors.
 
-6. Add your changed files to the staging area: `git add <nameOfFile>`
+6. Add your changed files to the staging area: `git add <nameOfFile>` To figure out what files you changed, type `git status` and copy paste whichever ones you want to upload. 
 
-7. Commit these changes with a message: `git commit -m "message goes here"`
+7. Commit these changes with a message describing what you did: `git commit -m "added new title"`
 
-8. Push to the repository (on GitHub): `git push origin <nameOfYourBranch>`
+8. Pull down any changes that other people may have made while you were working. `git pull origin master`. If there's merge conflicts (which are caused by two or more people modifying the same file), let Brian know.
+
+9. Push to the repository (on GitHub): `git push origin <nameOfYourBranch>`
 
 
 ### Step 2: Code review
