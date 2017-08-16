@@ -29,26 +29,6 @@ First, open up Terminal. You can just do `CMD` + `Space` and type "Terminal" in 
 
 ![terminal](http://i.imgur.com/Y1o9O7T.png)
 
-### Basic Terminal commands
-
-No need to memorize these, but here's a few Terminal commands that might be useful:
-
-`ls` - lists what files are in your current folder
-
-`open .` - opens the current folder in Finder. Note: `.` = current folder. So you can also do `open <nameOfFolder>` to open a folder that you see with `ls`.
-
-`cd <name of folder>` - changes directory (ie folder) to whatever you specify
-
-`cd ../` - changes directory to the parent folder (whatever folder is holding the one you're in now)
-
-`cd` - goes to the root (highest) directory that contains all folders on your computer
-
-`mkdir <name of folder>` - makes a new folder with desired name
-
-`cat <text file>` - prints the contents of a text file in the Terminal
-
-`rm <name of file>` - deletes a file
-
 ### Clone the project
 
 Open up Terminal and type in `git`. You'll probably have to install Apple's xcode command line tools.
@@ -167,4 +147,22 @@ $ firebase deploy             # Deploys public folder to firebase
 
 3. Close any issues you solved.
 
+### Basic Terminal commands
 
+No need to memorize these, but here's a few Terminal commands that might be useful:
+
+`ls` - lists what files are in your current folder
+
+`open .` - opens the current folder in Finder. Note: `.` = current folder. So you can also do `open <nameOfFolder>` to open a folder that you see with `ls`.
+
+`cd <name of folder>` - changes directory (ie folder) to whatever you specify
+
+`cd ../` - changes directory to the parent folder (whatever folder is holding the one you're in now)
+
+`cd` - goes to the root (highest) directory that contains all folders on your computer
+
+`mkdir <name of folder>` - makes a new folder with desired name
+
+`cat <text file>` - prints the contents of a text file in the Terminal
+
+`rm <name of file>` - deletes a file
