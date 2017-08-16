@@ -33,7 +33,7 @@ First, open up Terminal. You can just do `CMD` + `Space` and type "Terminal" in 
 
 Open up Terminal and type in `git`. You'll probably have to install Apple's xcode command line tools.
 
-Make a new folder where you want to hold all your GitHub projects. You can do this by opening up Terminal, typing `cd` to go to the highest level folder in your computer (so you have access to everything). Type `ls` to see what folders are around. Some you may recognize are `Desktop` or `Applications`. I just make a `Github` folder here by typing `mkdir Github` (make a directory named Github). Then go into the folder by typing `cd` (changing directory). 
+Make a new folder where you want to hold all your GitHub projects. You can do this by opening up Terminal, typing `cd` to go to the highest level folder in your computer (so you have access to everything). Type `ls` to see what folders are around. Some you may recognize are `Desktop` or `Applications`. I just make a `Github` folder here by typing `mkdir Github` (make a directory named Github). Then go into the folder by typing `cd Github` (changing directory to the Github folder, note: "directory" is just another name for a folder. idk why). 
 
 Now that you're inside the folder, `clone` the project from our central GitHub repository down to your computer:
 
