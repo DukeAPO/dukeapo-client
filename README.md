@@ -128,7 +128,7 @@ $ firebase deploy             # Deploys public folder to firebase
 
 6. Add your changed files to the staging area: `git add <nameOfFile>`
 
-7. Commit these changes with a message: `git commit -m "message goes here"`
+7. Commit these changes with a message describing what you did: `git commit -m "added new title"`
 
 8. Push to the repository (on GitHub): `git push origin <nameOfYourBranch>`
 
