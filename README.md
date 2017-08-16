@@ -126,11 +126,13 @@ $ firebase deploy             # Deploys public folder to firebase
 
 5. Run `yarn test` to make sure all unit tests pass. Fix any errors.
 
-6. Add your changed files to the staging area: `git add <nameOfFile>`
+6. Add your changed files to the staging area: `git add <nameOfFile>` To figure out what files you changed, type `git st` and copy paste whichever ones you want to upload. 
 
 7. Commit these changes with a message describing what you did: `git commit -m "added new title"`
 
-8. Push to the repository (on GitHub): `git push origin <nameOfYourBranch>`
+8. Pull down any changes that other people may have made while you were working. `git pull origin master`. If there's merge conflicts (which are caused by two or more people modifying the same file), let Brian know.
+
+9. Push to the repository (on GitHub): `git push origin <nameOfYourBranch>`
 
 
 ### Step 2: Code review
