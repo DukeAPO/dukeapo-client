@@ -122,42 +122,42 @@ class WhatWeDo extends React.Component {
     const data = [
       {
         title: 'Leadership',
-        information: 'Here\'s to Alpha Phi Omega, Loyal Brothers we, \
-          True to self and to each other, firm in loyalty. \
-          Daily working, daily striving, ever more to be \
-          True to Alpha Phi Omega, Our Fraternity. \
-          Brothers clasp the hands of Brothers, strong the circle we \
-          Ever mindful, ever serving all humanity. \
-          Now we raise our grateful voices in our song to thee:\
-          True to Alpha Phi Omega, may we always be.',
+        information: 'Our chapter offers opportunities for \
+          its members to strengthen their leadership \
+          skills through semester-long officer positions. \
+          Elections are held each semester, and these provide \
+          chances for brothers to learn and grow as leaders \
+          in the community.',
+
         src: banner,
         orientation: 'lr',
         color: '#065bbe'
       },
       {
         title: 'Friendship',
-        information: 'Here\'s to Alpha Phi Omega, Loyal Brothers we, \
-          True to self and to each other, firm in loyalty. \
-          Daily working, daily striving, ever more to be \
-          True to Alpha Phi Omega, Our Fraternity. \
-          Brothers clasp the hands of Brothers, strong the circle we \
-          Ever mindful, ever serving all humanity. \
-          Now we raise our grateful voices in our song to thee:\
-          True to Alpha Phi Omega, may we always be.',
+        information: 'Besides serving together, we also have fun \
+          together! We hold socials, weekly dinners, and \
+          our traditional APO goes to Bella Union events \
+          on Thursdays as events in which brothers and \
+          pledges can bond. We also hold semi-formals, \
+          sectional and regional conferences, and retreats \
+          where the APO family comes together, both at Duke \
+          and at other colleges.',
         src: banner,
         orientation: 'rl',
         color: '#FFC107'
       },
       {
         title: 'Service',
-        information: 'Here\'s to Alpha Phi Omega, Loyal Brothers we, \
-          True to self and to each other, firm in loyalty. \
-          Daily working, daily striving, ever more to be \
-          True to Alpha Phi Omega, Our Fraternity. \
-          Brothers clasp the hands of Brothers, strong the circle we \
-          Ever mindful, ever serving all humanity. \
-          Now we raise our grateful voices in our song to thee:\
-          True to Alpha Phi Omega, may we always be.',
+        information: 'Participation in service is what APO is \
+        all about. Throughout the week, projects include \
+        tutoring high school students, doing science experiments \
+        with children, playing with kids at the Boys and Girls \
+        Club, tending crops at the Duke Campus Farm, building homes \
+        with Habitat for Humanity, assisting the elderly at a local \
+        nursing home, and even taking care of tigers at Carolina \
+        Tiger Rescue!',
+
         src: banner,
         orientation: 'lr',
         color: '#065bbe'
