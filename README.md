@@ -31,7 +31,7 @@ First, open up Terminal. You can just do `CMD` + `Space` and type "Terminal" in 
 
 ### Basic Terminal commands
 
-You can look up entire sheets of these (they're super useful) but here's a few that I use a lot:
+No need to memorize these, but here's a few Terminal commands that might be useful:
 
 `ls` - lists what files are in your current folder
 
@@ -53,7 +53,9 @@ You can look up entire sheets of these (they're super useful) but here's a few t
 
 Open up Terminal and type in `git`. You'll probably have to install Apple's xcode command line tools.
 
-cd (change directory) to or make a new folder where you want to hold all your GitHub projects. I just make a `GitHub` folder somewhere and put all my stuff there. Once you're inside that folder, `clone` the project from our central GitHub repository down to your computer:
+Make a new folder where you want to hold all your GitHub projects. You can do this by opening up Terminal, typing `cd` to go to the highest level folder in your computer (so you have access to everything). Type `ls` to see what folders are around. Some you may recognize are `Desktop` or `Applications`. I just make a `Github` folder here by typing `mkdir Github` (make a directory named Github). Then go into the folder by typing `cd` (changing directory). 
+
+Now that you're inside the folder, `clone` the project from our central GitHub repository down to your computer:
 
 `git clone https://github.com/DukeAPO/dukeapo-client.git`
 
