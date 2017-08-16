@@ -12,7 +12,6 @@ Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/mast
 > Also make sure your read through our [Git Workflow](#our-git-workflow) before submitting any code! (ask Brian for clarification since it's a bit complicated)
 
 - [Downloading the project](#downloading-the-project)
-  - [Basic Terminal commands](#basic-terminal-commands)
   - [Clone the project](#clone-the-project)
 - [Installing stuff](#installing-stuff)
   - [Homebrew](#homebrew)
@@ -22,6 +21,7 @@ Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/mast
 - [Testing](#testing)
 - [Deploying the project](#deploying-the-project)
 - [Our Git Workflow](#our-git-workflow)
+- [Basic Terminal commands](#basic-terminal-commands)
 
 ## Downloading the project
 
