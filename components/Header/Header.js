@@ -18,15 +18,15 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header className={ s.header }>
-        <div className={ s.container }>
-          <Toolbar style={ { backgroundColor: '#fff' } }>
+      <header className={s.header}>
+        <div className={s.container}>
+          <Toolbar style={{ backgroundColor:'#fff' }}>
             <ToolbarGroup firstChild={true}>
-              <img className={ s.logo } src={logo} alt="APO logo"/>
+              <img className={s.logo} src={logo} alt="APO logo" />
             </ToolbarGroup>
             <ToolbarGroup>
-              <div className = { s.toolbarNavigation }>
-                <Navigation navigation={ this.props.navigation }/>
+              <div className={s.toolbarNavigation}>
+                <Navigation navigation={this.props.navigation} />
               </div>
             </ToolbarGroup>
           </Toolbar>

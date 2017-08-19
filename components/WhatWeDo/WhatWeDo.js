@@ -178,7 +178,7 @@ class WhatWeDo extends React.Component {
     return (
       <div>
         <h1 className={s.header}>
-          What We Do
+          Why APO?
         </h1>
         <div style={{padding:'0px 10px 20px 10px'}}>
           {blocks}
