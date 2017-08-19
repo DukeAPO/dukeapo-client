@@ -34,7 +34,7 @@ class HomePage extends React.Component {
         scrollToId: 'Stats'
       },
       {
-        label: 'What We Do',
+        label: 'Why APO?',
         scrollToId: 'WhatWeDo'
       },
       {

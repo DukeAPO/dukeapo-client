@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import Link from '../Link';
+
 import s from './Navigation.css';
 import FlatButton from 'material-ui/FlatButton';
 var scrollIntoView = require('scroll-into-view');
@@ -25,6 +25,7 @@ class NavButton extends React.Component {
       </FlatButton>
     );
   }
+  
 }
 
 class Navigation extends React.Component {
