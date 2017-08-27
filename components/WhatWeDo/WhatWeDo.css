@@ -33,7 +33,8 @@
 }
 
 .description {
-  font-family: "Patatino";
+  font-family: "Palatino";
+  line-height: normal;
   margin: 0;
   padding: 5px;
   word-break: normal;
