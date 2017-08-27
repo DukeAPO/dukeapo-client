@@ -2,18 +2,19 @@ import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
 import s from './WhatWeDo.css';
 import shadow from '../Image/Image.css';
-import banner from '../Assets/DukeApoBanner.png';
-
+import semi from '../Assets/SemiFall16.jpg';
+import couch from '../Assets/Couch.jpg';
+import stream from '../Assets/Stream.jpg';
 
 class WhatWeDoDescription extends React.Component {
   render() {
     return (
       <div className={s.container}>
-        <h3 className={`${s.description} ${s.title}`}
+        <h3 className={`${s.title}`}
           style={{backgroundColor: this.props.color}}>
           {this.props.title}
         </h3>
-        <p className={`${s.description} ${s.information}`} style={{flexGrow: '1'}}>
+        <p className={`${s.description} ${s.descriptioncontainer}`} style={{flexGrow: '1'}}>
           {this.props.information}
         </p>
       </div>
@@ -79,12 +80,12 @@ class WhatWeDoBlock extends React.Component {
     }
     else{
       const descriptionSmall = (
-        <TableRowColumn style={{width: '30%'}}>
+        <TableRowColumn style={{width: '45%'}}>
           {description}
         </TableRowColumn>
       );
       const imageBig = (
-        <TableRowColumn style={{width: '70%'}}>
+        <TableRowColumn style={{width: '55%'}}>
           {image}
         </TableRowColumn>
       );
@@ -129,7 +130,7 @@ class WhatWeDo extends React.Component {
           chances for brothers to learn and grow as leaders \
           in the community.',
 
-        src: banner,
+        src: semi,
         orientation: 'lr',
         color: '#065bbe'
       },
@@ -143,7 +144,7 @@ class WhatWeDo extends React.Component {
           sectional and regional conferences, and retreats \
           where the APO family comes together, both at Duke \
           and at other colleges.',
-        src: banner,
+        src: couch,
         orientation: 'rl',
         color: '#FFC107'
       },
@@ -158,7 +159,7 @@ class WhatWeDo extends React.Component {
         nursing home, and even taking care of tigers at Carolina \
         Tiger Rescue!',
 
-        src: banner,
+        src: stream,
         orientation: 'lr',
         color: '#065bbe'
       }
