@@ -15,6 +15,7 @@ import Image from '../../components/Image';
 import Statistics from '../../components/Statistics';
 import WhatWeDo from '../../components/WhatWeDo';
 import banner from '../../components/Assets/DukeApoBanner.png';
+import ContactSection from '../../components/ContactSection';
 
 class HomePage extends React.Component {
 
@@ -40,6 +41,10 @@ class HomePage extends React.Component {
       {
         label: 'Recruitment',
         scrollToId: ''
+      },
+      {
+        label: 'Contact',
+        scrollToId: 'ContactSection'
       }
     ];
     return (
@@ -48,6 +53,7 @@ class HomePage extends React.Component {
         <Image src={banner}/>
         {statistics}
         {whatWeDo}
+        {ContactSection}
         <Footer/>
       </div>
     );
