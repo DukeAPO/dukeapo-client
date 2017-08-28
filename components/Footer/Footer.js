@@ -10,7 +10,7 @@ function Footer() {
       <Toolbar style={{ backgroundColor: '#424242' }}>
         <ToolbarGroup firstChild={true}>
           <h2 className={s.name}>
-            Duke University - Alpha Phi Omega (&Alpha; &Phi; &Omega;) - Lambda Nu (&Lambda; &Nu;) Chapter
+            &Alpha; &Phi; &Omega; : &Lambda; &Nu; Chapter
           </h2>
         </ToolbarGroup>
         <ToolbarGroup>
