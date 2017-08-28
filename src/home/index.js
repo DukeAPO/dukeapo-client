@@ -24,7 +24,8 @@ class HomePage extends React.Component {
 
   render() {
     const statistics = <div id={"Stats"}><Statistics/></div>;
-    const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>
+    const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>;
+    const contactSection = <div id={"ContactSection"}><ContactSection/></div>;
     const navigation = [
       {
         label: 'Home',
@@ -53,7 +54,7 @@ class HomePage extends React.Component {
         <Image src={banner}/>
         {statistics}
         {whatWeDo}
-        {ContactSection}
+        {contactSection}
         <Footer/>
       </div>
     );
