@@ -22,15 +22,18 @@ class RecruitmentImage extends React.Component {
 class RecruitmentDescription extends React.Component {
 
   render() {
+    const widthCutoff = 500;
     const facebookButton = (
-      <h4 className={s.buttontext}>
-      Follow us on &nbsp;
-      <a href={'https://www.facebook.com/DukeAlphaPhiOmega/'}>
-        <Ripples className={s.ripples}>
-        <img src={facebookImage} className={s.image}/>
-        </Ripples>
-      </a>
-      </h4>
+      <td>
+        <h4 className={s.buttontext}>
+          Follow us on &nbsp;
+          <a href={'https://www.facebook.com/DukeAlphaPhiOmega/'}>
+            <Ripples className={s.ripples}>
+              <img src={facebookImage} className={s.image}/>
+            </Ripples>
+          </a>
+        </h4>
+      </td>
     );
     const listServeButtonStyle = {
       borderRadius: '16px',
@@ -38,12 +41,38 @@ class RecruitmentDescription extends React.Component {
       textAlign: 'center'
     }
     const listServeButton = (
+      <td>
         <FlatButton style={listServeButtonStyle} fullWidth={true}>
           <h4 className={s.buttontext}>
               Join our list serv
           </h4>
         </FlatButton>
+      </td>
     );
+    var buttonOrder = undefined;
+    if(this.props.width > widthCutoff) {
+      buttonOrder = (
+        <table style={{width: '100%'}}>
+          <tr>
+            {facebookButton}
+            {listServeButton}
+          </tr>
+        </table>
+      );
+    }
+    else{
+      buttonOrder = (
+        <table style={{width: '100%'}}>
+          <tr className={s.space}>
+            {facebookButton}
+          </tr>
+          <tr className={s.space}>
+            {listServeButton}
+          </tr>
+        </table>
+      );
+    }
+
     return (
       <div className={s.container}>
         <h2 className={s.subheader}>
@@ -52,16 +81,7 @@ class RecruitmentDescription extends React.Component {
         <p className={s.description}>
           {this.props.description}
         </p>
-        <table style={{width: '100%'}}>
-          <tr>
-            <td>
-              {facebookButton}
-            </td>
-            <td>
-              {listServeButton}
-            </td>
-          </tr>
-        </table>
+        {buttonOrder}
       </div>
     );
   }
@@ -98,7 +118,7 @@ class RecruitmentContainer extends React.Component {
     const widthCutoff = 1000;
     var order = undefined;
     const description = <RecruitmentDescription subheader={this.props.subheader}
-      description = {this.props.description} />;
+      description = {this.props.description} width={this.state.width}/>;
     const image = <RecruitmentImage src={this.props.src}/>;
     if(this.state.width < widthCutoff){
       order = (
