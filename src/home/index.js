@@ -15,6 +15,7 @@ import Image from '../../components/Image';
 import Statistics from '../../components/Statistics';
 import WhatWeDo from '../../components/WhatWeDo';
 import banner from '../../components/Assets/DukeApoBanner.png';
+import Recruitment from '../../components/Recruitment';
 
 class HomePage extends React.Component {
 
@@ -24,6 +25,7 @@ class HomePage extends React.Component {
   render() {
     const statistics = <div id={"Stats"}><Statistics/></div>;
     const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>
+    const recruitment = <div id={"Recruitment"}><Recruitment/></div>;
     const navigation = [
       {
         label: 'Home',
@@ -39,7 +41,7 @@ class HomePage extends React.Component {
       },
       {
         label: 'Recruitment',
-        scrollToId: ''
+        scrollToId: 'Recruitment'
       }
     ];
     return (
@@ -48,6 +50,7 @@ class HomePage extends React.Component {
         <Image src={banner}/>
         {statistics}
         {whatWeDo}
+        {recruitment}
         <Footer/>
       </div>
     );

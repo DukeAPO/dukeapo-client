@@ -1,7 +1,7 @@
 import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
 import s from './WhatWeDo.css';
-import shadow from '../Image/Image.css';
+import shadow from '../CSS/ImageShadow.css';
 import semi from '../Assets/SemiFall16.jpg';
 import couch from '../Assets/Couch.jpg';
 import stream from '../Assets/Stream.jpg';
@@ -61,7 +61,6 @@ class WhatWeDoBlock extends React.Component {
 
   render() {
     const widthCutoff = 930;
-    const heightCutoff = 1024;
     var order = undefined;
     const description = <WhatWeDoDescription title={this.props.title}
       information={this.props.information} color={this.props.color}/>;
