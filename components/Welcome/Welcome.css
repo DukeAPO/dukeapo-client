@@ -1,0 +1,19 @@
+.container {
+    background: #065bbe;
+    overflow: auto;
+    text-align: center;
+}
+
+.title {
+  font-family: "Avenir";
+  font-weight: medium;
+  font-size: 48pt;
+  color: #FFFFFF;
+}
+
+.welcome-button {
+  width: 242px;
+  height: 40px;
+  border-radius: 16px; /*check*/
+  color: gray;
+}
