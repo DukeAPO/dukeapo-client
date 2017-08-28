@@ -25,8 +25,10 @@ class WhatWeDoDescription extends React.Component {
 class WhatWeDoImage extends React.Component {
   render() {
     return (
-      <div className={`${s.container} ${shadow.shadow}`}>
-        <img src={this.props.src} className={s.image}/>
+      <div className={`${s.container}`}>
+        <div className={`${shadow.shadow}`}>
+          <img src={this.props.src} className={s.image}/>
+        </div>
       </div>
     );
   }
