@@ -99,7 +99,8 @@ class Navigation extends React.Component {
             <FontIcon className={MaterialIcons.materialIcons}>menu</FontIcon>
           </IconButton>
           <Drawer open={this.state.openMenu} openSecondary={true} docked={false}
-            onRequestChange={(openMenu) => this.setState({openMenu})}>
+            onRequestChange={(openMenu) => this.setState({openMenu})}
+            containerStyle={{maxWidth: '30%'}}>
             {navs}
           </Drawer>
         </div>
