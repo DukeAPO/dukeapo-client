@@ -21,25 +21,31 @@
   }
 }
 
+.title {
+  text-align:center;
+  font-family: "Avenir";
+  color: #FFF;
+  border: solid #000;
+  border-radius: 10px 10px 0px 0px;
+  border-width: 1px 1px 0px 1px;
+  margin: 0;
+  padding: 5px;
+}
 
 .description {
-  font-family: "Avenir";
+  font-family: "Palatino";
+  line-height: normal;
   margin: 0;
   padding: 5px;
   word-break: normal;
   white-space: normal;
   width: inherit;
+  font-weight: normal;
+  font-size: 18pt;
+  color: #4A4A4A;
 }
 
-.title {
-  text-align:center;
-  color: #FFF;
-  border: solid #000;
-  border-radius: 10px 10px 0px 0px;
-  border-width: 1px 1px 0px 1px;
-}
-
-.information {
+.descriptioncontainer {
   border: solid #000;
   border-radius: 0px 0px 10px 10px;
   border-width: 0px 1px 1px 1px;

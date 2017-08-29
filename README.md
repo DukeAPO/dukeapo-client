@@ -101,6 +101,13 @@ unit tests make sure that the website loads as expected
 
 Whenever you make changes and think they look good, ask another member of the team to take a look at your code in case there's any bugs or slip ups you missed. If they say it looks good, feel free to publish.
 
+First, install Firebase on Terminal: 
+
+```
+npm install -g firebase-tools
+firebase init
+```
+
 ```shell
 $ yarn build                  # Builds app in public folder
 $ firebase deploy             # Deploys public folder to firebase

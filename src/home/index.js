@@ -16,6 +16,7 @@ import Statistics from '../../components/Statistics';
 import WhatWeDo from '../../components/WhatWeDo';
 import banner from '../../components/Assets/DukeApoBanner.png';
 import ContactSection from '../../components/ContactSection';
+import Recruitment from '../../components/Recruitment';
 
 class HomePage extends React.Component {
 
@@ -26,6 +27,7 @@ class HomePage extends React.Component {
     const statistics = <div id={"Stats"}><Statistics/></div>;
     const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>;
     const contactSection = <div id={"ContactSection"}><ContactSection/></div>;
+    const recruitment = <div id={"Recruitment"}><Recruitment/></div>;
     const navigation = [
       {
         label: 'Home',
@@ -36,12 +38,12 @@ class HomePage extends React.Component {
         scrollToId: 'Stats'
       },
       {
-        label: 'What We Do',
+        label: 'Why APO?',
         scrollToId: 'WhatWeDo'
       },
       {
         label: 'Recruitment',
-        scrollToId: ''
+        scrollToId: 'Recruitment'
       },
       {
         label: 'Contact',
@@ -55,6 +57,7 @@ class HomePage extends React.Component {
         {statistics}
         {whatWeDo}
         {contactSection}
+        {recruitment}
         <Footer/>
       </div>
     );

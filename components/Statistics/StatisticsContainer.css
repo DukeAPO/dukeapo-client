@@ -1,5 +1,6 @@
 .container {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .number {
@@ -14,6 +15,25 @@
   font-weight: normal;
   font-size: 24pt;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 470px) {
+  .number {
+    font-size: 20pt;
+  }
+
+  .description {
+    font-size: 16pt;
+  }
+}
+
+.descriptioncol {
+  text-align: left;
+}
+
+.row {
+  width: 50%;
+  max-width: 50%;
 }
 
 .icon {

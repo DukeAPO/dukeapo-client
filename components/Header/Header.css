@@ -8,10 +8,9 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-
 .logo {
-  max-height: 100%;
-  max-width: 100%;
+	height: 100%;
+	width: 40%; /*TODO(blin): fix this hack*/
 }
 
 .container {

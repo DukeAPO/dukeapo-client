@@ -1,19 +1,20 @@
 import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
 import s from './WhatWeDo.css';
-import shadow from '../Image/Image.css';
-import banner from '../Assets/DukeApoBanner.png';
-
+import shadow from '../CSS/ImageShadow.css';
+import semi from '../Assets/SemiFall16.jpg';
+import couch from '../Assets/Couch.jpg';
+import stream from '../Assets/Stream.jpg';
 
 class WhatWeDoDescription extends React.Component {
   render() {
     return (
       <div className={s.container}>
-        <h3 className={`${s.description} ${s.title}`}
+        <h3 className={`${s.title}`}
           style={{backgroundColor: this.props.color}}>
           {this.props.title}
         </h3>
-        <p className={`${s.description} ${s.information}`} style={{flexGrow: '1'}}>
+        <p className={`${s.description} ${s.descriptioncontainer}`} style={{flexGrow: '1'}}>
           {this.props.information}
         </p>
       </div>
@@ -24,8 +25,10 @@ class WhatWeDoDescription extends React.Component {
 class WhatWeDoImage extends React.Component {
   render() {
     return (
-      <div className={`${s.container} ${shadow.shadow}`}>
-        <img src={this.props.src} className={s.image}/>
+      <div className={`${s.container}`}>
+        <div className={`${shadow.shadow}`}>
+          <img src={this.props.src} className={s.image}/>
+        </div>
       </div>
     );
   }
@@ -60,7 +63,6 @@ class WhatWeDoBlock extends React.Component {
 
   render() {
     const widthCutoff = 930;
-    const heightCutoff = 1024;
     var order = undefined;
     const description = <WhatWeDoDescription title={this.props.title}
       information={this.props.information} color={this.props.color}/>;
@@ -79,12 +81,12 @@ class WhatWeDoBlock extends React.Component {
     }
     else{
       const descriptionSmall = (
-        <TableRowColumn style={{width: '30%'}}>
+        <TableRowColumn style={{width: '45%'}}>
           {description}
         </TableRowColumn>
       );
       const imageBig = (
-        <TableRowColumn style={{width: '70%'}}>
+        <TableRowColumn style={{width: '55%'}}>
           {image}
         </TableRowColumn>
       );
@@ -129,7 +131,7 @@ class WhatWeDo extends React.Component {
           chances for brothers to learn and grow as leaders \
           in the community.',
 
-        src: banner,
+        src: semi,
         orientation: 'lr',
         color: '#065bbe'
       },
@@ -143,7 +145,7 @@ class WhatWeDo extends React.Component {
           sectional and regional conferences, and retreats \
           where the APO family comes together, both at Duke \
           and at other colleges.',
-        src: banner,
+        src: couch,
         orientation: 'rl',
         color: '#FFC107'
       },
@@ -158,7 +160,7 @@ class WhatWeDo extends React.Component {
         nursing home, and even taking care of tigers at Carolina \
         Tiger Rescue!',
 
-        src: banner,
+        src: stream,
         orientation: 'lr',
         color: '#065bbe'
       }
@@ -178,7 +180,7 @@ class WhatWeDo extends React.Component {
     return (
       <div>
         <h1 className={s.header}>
-          What We Do
+          Why APO?
         </h1>
         <div style={{padding:'0px 10px 20px 10px'}}>
           {blocks}
