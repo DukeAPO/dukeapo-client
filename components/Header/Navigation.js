@@ -14,7 +14,7 @@ import s from './Navigation.css';
 import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
-import IconMenu from 'material-ui/IconMenu';
+import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import MaterialIcons from '../CSS/MaterialIcons.css';
 
@@ -37,10 +37,14 @@ class NavButton extends React.Component {
 
 class NavMenuItem extends React.Component {
   render() {
+    const onClickWithCallback = function() {
+      scrollIntoView(document.getElementById(this.props.scrollToId));
+      this.props.callback();
+    }.bind(this);
     return (
       <MenuItem
       primaryText={this.props.label}
-      onClick={() => scrollIntoView(document.getElementById(this.props.scrollToId))}/>
+      onClick={onClickWithCallback}/>
     );
   }
 }
@@ -51,9 +55,15 @@ class Navigation extends React.Component {
     super();
     this.state = {
       width: 0,
-      height: 0
+      height: 0,
+      openMenu: false,
     };
     this.resizeState = this.resizeState.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    this.setState({openMenu: !this.state.openMenu});
   }
 
   resizeState() {
@@ -75,18 +85,24 @@ class Navigation extends React.Component {
   render() {
     const navs = [];
     var order = undefined;
+    const closeMenu = function(){
+      this.setState({openMenu: false});
+    }.bind(this);
     if(this.state.width < widthCutoff){
       this.props.navigation.forEach(function(navItem) {
-        navs.push(<NavMenuItem label={navItem.label} scrollToId={navItem.scrollToId} />)
+        navs.push(<NavMenuItem label={navItem.label} scrollToId={navItem.scrollToId}
+                  callback={closeMenu}/>);
       });
       order = (
-        <IconMenu
-        iconButtonElement={
-          <IconButton>
+        <div>
+          <IconButton onClick={this.toggleMenu}>
             <FontIcon className={MaterialIcons.materialIcons}>menu</FontIcon>
-          </IconButton>}>
-          {navs}
-        </IconMenu>
+          </IconButton>
+          <Drawer open={this.state.openMenu} openSecondary={true} docked={false}
+            onRequestChange={(openMenu) => this.setState({openMenu})}>
+            {navs}
+          </Drawer>
+        </div>
       );
     }
     else{
