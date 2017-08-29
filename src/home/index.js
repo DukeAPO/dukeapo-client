@@ -42,6 +42,10 @@ class HomePage extends React.Component {
       {
         label: 'Recruitment',
         scrollToId: 'Recruitment'
+      },
+      {
+        label: 'Contact',
+        scrollToId: ''
       }
     ];
     return (
