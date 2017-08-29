@@ -8,6 +8,9 @@ import Socials from '../Assets/Socials.png';
 import Pledges from '../Assets/Pledges.png';
 import Brothers from '../Assets/Brothers.png';
 
+const firstWidthCutoff = 690;
+const secondWidthCutoff = 1120;
+
 class Statistics extends React.Component {
 
   constructor() {
@@ -68,24 +71,54 @@ class Statistics extends React.Component {
   }
 
   render(){
-    const firstWidthCutoff = 1120;
-    const secondWidthCutoff = 500;
-    const stats = [
-      <StatisticsContainer number={2171} description={"service hours"} src={ApoClock}/>,
-      <StatisticsContainer number={91} description={"service events"} src={Books}/>,
-      <StatisticsContainer number={92} description={"socials"} src={Socials}/>,
-      <StatisticsContainer number={45} description={"brothers"} src={Brothers}/>,
-      <StatisticsContainer number={27} description={"pledges"} src={Pledges}/>
+    const data = [
+      {
+        number: 2171,
+        description: "Service Hours",
+        src: ApoClock,
+      },
+      {
+        number: 91,
+        description: "Service Events",
+        src: Books,
+      },
+      {
+        number: 92,
+        description: "Socials",
+        src: Socials,
+      },
+      {
+        number: 45,
+        description: "Brothers",
+        src: Brothers,
+      },
+      {
+        number: 27,
+        description: "Pledges",
+        src: Pledges,
+      },
     ];
-    var order = [];
-    if(this.state.width > firstWidthCutoff){
-      order = this.constructTable(stats, 5);
-    }
-    else if(this.state.width > secondWidthCutoff){
-      order = this.constructTable(stats, 3);
+    var order = undefined;
+    var stats = [];
+    if(this.state.width < firstWidthCutoff) {
+      data.forEach(function(element) {
+        stats.push(<StatisticsContainer number={element.number}
+          description={element.description} src={element.src}
+          small={true} />)
+      });
+      order = this.constructTable(stats, 1);
     }
     else{
-      order = this.constructTable(stats, 1);
+      data.forEach(function(element) {
+        stats.push(<StatisticsContainer number={element.number}
+          description={element.description} src={element.src}/>)
+      });
+      if(this.state.width < secondWidthCutoff){
+        order = this.constructTable(stats, 3);
+      }
+      else{
+        order = this.constructTable(stats, 5);
+      }
     }
 
     return (
