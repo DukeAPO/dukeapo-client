@@ -1,0 +1,14 @@
+.buttonText {
+  padding: 0;
+  margin: 0;
+  border-radius: inherit;
+  border: inherit;
+  font-weight: lighter;
+}
+
+.ripples {
+  vertical-align: top;
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}

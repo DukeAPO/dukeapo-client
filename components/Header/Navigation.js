@@ -16,7 +16,7 @@ import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import MaterialIcons from '../CSS/MaterialIcons.css';
+import MaterialIcons from '../CSS/Icons.css';
 
 var scrollIntoView = require('scroll-into-view');
 

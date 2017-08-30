@@ -1,11 +1,13 @@
 import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
-import s from './Recruitment.css';
+import font from '../CSS/Font.css';
 import shadow from '../CSS/ImageShadow.css';
+import button from '../CSS/Button.css';
+import s from './Recruitment.css';
 import broomball from '../Assets/Broomball.jpg';
 import facebookImage from '../Assets/Facebook.png';
-import FlatButton from 'material-ui/FlatButton';
-import Ripples from 'react-ripples';
+import SocialButton from '../SocialButton';
+import JoinListServeButton from '../JoinListServeButton';
 
 class RecruitmentImage extends React.Component {
   render() {
@@ -22,37 +24,24 @@ class RecruitmentImage extends React.Component {
 class RecruitmentDescription extends React.Component {
 
   render() {
-    const widthCutoff = 500;
+    const widthCutoff = 470;
     const facebookButton = (
       <td>
-        <h4 className={s.buttontext}>
+        <h4 className={`${font.h4} ${s.facebookButtonContainer}`}>
           Follow us on &nbsp;
-          <a href={'https://www.facebook.com/DukeAlphaPhiOmega/'}>
-            <Ripples className={s.ripples}>
-              <img src={facebookImage} className={s.image}/>
-            </Ripples>
-          </a>
+          <SocialButton src={facebookImage} href={'https://www.facebook.com/DukeAlphaPhiOmega/'} />
         </h4>
       </td>
     );
-    const listServeButtonStyle = {
-      borderRadius: '16px',
-      border: '1px solid',
-      textAlign: 'center'
-    }
     const listServeButton = (
       <td>
-        <FlatButton style={listServeButtonStyle} fullWidth={true} href={'http://eepurl.com/cwEmij'}>
-          <h4 className={s.buttontext}>
-              Join our list serv
-          </h4>
-        </FlatButton>
+          <JoinListServeButton />
       </td>
     );
     var buttonOrder = undefined;
     if(this.props.width > widthCutoff) {
       buttonOrder = (
-        <table style={{width: '100%'}}>
+        <table className={`${s.table}`}>
           <tr>
             {facebookButton}
             {listServeButton}
@@ -62,7 +51,7 @@ class RecruitmentDescription extends React.Component {
     }
     else{
       buttonOrder = (
-        <table style={{width: '100%'}}>
+        <table className={`${s.table}`}>
           <tr className={s.space}>
             {facebookButton}
           </tr>
@@ -75,10 +64,10 @@ class RecruitmentDescription extends React.Component {
 
     return (
       <div className={s.container}>
-        <h2 className={s.subheader}>
+        <h2 className={`${font.h2} ${s.subheader}`}>
           {this.props.subheader}
         </h2>
-        <p className={s.description}>
+        <p className={`${font.p} ${s.description}`}>
           {this.props.description}
         </p>
         {buttonOrder}
@@ -170,7 +159,7 @@ class Recruitment extends React.Component {
 
     return (
       <div>
-        <h1 className={s.header}>
+        <h1 className={`${font.h1} ${s.header}`}>
           Recruitment
         </h1>
         <RecruitmentContainer subheader={data.subheader}
