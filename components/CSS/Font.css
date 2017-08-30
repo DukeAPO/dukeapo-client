@@ -11,41 +11,57 @@
 }/* 1290 by 640 */
 
 .h1 {
-  font-size: calc(4.6vw + 4.6px);
+  /* font size ranging from 64 - 26 px */
+  /* (64-26)/(1280-470)*(100vw + 1280px) + 64px */
+  font-size: 64px;
+  font-size: calc(4.7vw + 4px);
 }
 
 .h2 {
+  /* (40-22)/(1280-470)*(100vw - 1280px) + 40px */
   font-size: 40px;
+  font-size: calc(2.2vw + 11.6px );
+
 }
 
 .h3 {
+  /* (32-20)/(1280-470)*(100vw - 1280px) + 32px */
   font-size: 32px;
+  font-size: calc(1.5vw + 13px)
 }
 
 .h4 {
+  /* (26-18)/(1280-470)*(100vw - 1280px) + 26px */
   font-size: 26px;
+  font-size: calc(0.99vw + 13.4px)
 }
 
 .p {
   font-family: "Palatino";
   font-weight: normal;
+  /* (24-16)/(1280-470)*(100vw - 1280px) + 24px */
   font-size: 24px;
+  font-size: calc(0.99vw + 11.4px)
 }
 
 @media screen and (max-width: 470px) {
   .h1 {
-
+    font-size: 26px;
   }
 
   .h2 {
-
+    font-size: 22px;
   }
 
   .h3 {
-
+    font-size: 20px;
   }
 
   .h4 {
+    font-size: 18px;
+  }
 
+  .p {
+    font-size: 16px;
   }
 }
