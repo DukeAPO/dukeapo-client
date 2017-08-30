@@ -26,7 +26,7 @@ class HomePage extends React.Component {
   render() {
     const welcome = <div id={"Welcome"}><Welcome/></div>;
     const statistics = <div id={"Stats"}><Statistics/></div>;
-    const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>
+    const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>;
     const recruitment = <div id={"Recruitment"}><Recruitment/></div>;
     const navigation = [
       {

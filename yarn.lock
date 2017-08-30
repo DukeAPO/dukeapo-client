@@ -2243,6 +2243,10 @@ css-loader@^0.27.3:
     postcss-modules-values "^1.1.0"
     source-list-map "^0.1.7"
 
+css-ripple-effect@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/css-ripple-effect/-/css-ripple-effect-1.0.5.tgz#6963b752aaf59babbd3fea3ec0da5d44e9122efb"
+
 css-rule-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/css-rule-stream/-/css-rule-stream-1.1.0.tgz#3786e7198983d965a26e31957e09078cbb7705a2"
@@ -4051,6 +4055,10 @@ join-path@^1.0.0:
     url-join "0.0.1"
     valid-url "^1"
 
+jquery@^2.2.1:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+
 js-base64@^2.1.9:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
@@ -4656,6 +4664,12 @@ material-components-web@^0.16.0:
 material-design-icons@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/material-design-icons/-/material-design-icons-3.0.1.tgz#9a71c48747218ebca51e51a66da682038cdcb7bf"
+
+material-ripple@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/material-ripple/-/material-ripple-0.2.5.tgz#19201063a9a301965ffdc7ffb80f23c50618a3f0"
+  dependencies:
+    jquery "^2.2.1"
 
 material-ui@^0.18.7:
   version "0.18.7"
@@ -5934,7 +5948,7 @@ react-document-title@^2.0.3:
     prop-types "^15.5.6"
     react-side-effect "^1.0.2"
 
-react-dom@>=0.13.0, react-dom@^15.3.1:
+react-dom@>=0.13.0, react-dom@^15.0.2, react-dom@^15.3.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
   dependencies:
@@ -5996,6 +6010,14 @@ react-icons@^2.2.5:
   dependencies:
     react-icon-base "2.0.7"
 
+react-ink@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/react-ink/-/react-ink-6.2.0.tgz#b268107bf986c6009bd38d7d3baa9fba1016e368"
+
+react-material-ripple@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-material-ripple/-/react-material-ripple-0.1.0.tgz#e8cd0a305199c9b2d437e0bfc7de5d17ef4e6e30"
+
 react-mdl@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/react-mdl/-/react-mdl-1.9.0.tgz#e7f285c68639cab40f0c9fff0e91ec605563c4e8"
@@ -6036,6 +6058,20 @@ react-redux@^5.0.3:
     lodash "^4.2.0"
     lodash-es "^4.2.0"
     loose-envify "^1.1.0"
+
+react-ripple-effect@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-ripple-effect/-/react-ripple-effect-1.0.4.tgz#63a4e5b2779d26e2845ffe47b0b292cc58208bf5"
+  dependencies:
+    react "^15.0.2"
+    react-dom "^15.0.2"
+
+react-ripples@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-ripples/-/react-ripples-0.4.0.tgz#ea994612828719b778e0104fca527f5dd690ef50"
+  dependencies:
+    prop-types "^15.5.8"
+    react "^15.5.4"
 
 react-scroll-box@^0.3.3-beta:
   version "0.2.9"
@@ -6106,7 +6142,7 @@ react-transition-group@^1.1.2:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-"react@>= 15 && < 16", react@>=0.13.0, react@^15.3.1, react@^15.4.1:
+"react@>= 15 && < 16", react@>=0.13.0, react@^15.0.2, react@^15.3.1, react@^15.4.1, react@^15.5.4:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:
