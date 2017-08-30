@@ -7,16 +7,16 @@
 }
 
 .smallContainer {
-	padding: 75px 0;
+	padding: 30px 0;
 
 }
 
 .contactHeader {
-	line-height: 1em;
+	line-height: 2em;
 	text-align: center;
 	color: #FFFFFF;
 	font-family: "Helvetica", lighter;
-	font-size: 48px;
+	font-size: 56px;
 	letter-spacing: 5px;
 	margin: 0;
 	padding: 0;
@@ -29,12 +29,26 @@
 	color: #D8D8D8;
 	line-height: 2em;
 	margin: 0 12vw;
-	padding: 50px 0 0 0;
 	text-align: left;
 }
 
 .image {
 	width: 25vw;
 	height: auto;
+}
+
+.tr {
+	text-align: right;
+	
+}
+
+.thLeft {
+	text-align: right;
+	padding-right: 80px;
+	width: 50%;
+}
+
+.thRight {
+	text-align: left;
 }
 
