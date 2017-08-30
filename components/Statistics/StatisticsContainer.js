@@ -1,4 +1,5 @@
 import React from 'react';
+import font from '../CSS/Font.css';
 import s from './StatisticsContainer.css';
 
 class StatisticsContainer extends React.Component {
@@ -15,7 +16,7 @@ class StatisticsContainer extends React.Component {
               </td>
               <td className={`${s.row} ${s.descriptioncol}`}>
                 <tr>
-                  <h1 className={s.number}>
+                  <h1 className={`${font.h1} ${s.number}`}>
                     {this.props.number}
                   </h1>
                   <h2 className={s.description}>
@@ -31,7 +32,7 @@ class StatisticsContainer extends React.Component {
     else{
       order = (
         <div>
-          <h1 className={s.number}>
+          <h1 className={`${font.h1} ${s.number}`}>
             {this.props.number}
           </h1>
           <h2 className={s.description}>

@@ -6,7 +6,6 @@
 .number {
   font-family: "Avenir";
   font-weight: medium;
-  font-size: 36pt;
   color: #FFFFFF;
 }
 
@@ -18,9 +17,6 @@
 }
 
 @media screen and (max-width: 470px) {
-  .number {
-    font-size: 20pt;
-  }
 
   .description {
     font-size: 16pt;
