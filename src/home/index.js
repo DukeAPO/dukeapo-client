@@ -14,6 +14,7 @@ import Footer from '../../components/Footer';
 import Image from '../../components/Image';
 import Statistics from '../../components/Statistics';
 import WhatWeDo from '../../components/WhatWeDo';
+import Welcome from '../../components/Welcome';
 import banner from '../../components/Assets/DukeApoBanner.png';
 import Recruitment from '../../components/Recruitment';
 
@@ -23,8 +24,9 @@ class HomePage extends React.Component {
   };
 
   render() {
+    const welcome = <div id={"Welcome"}><Welcome/></div>;
     const statistics = <div id={"Stats"}><Statistics/></div>;
-    const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>
+    const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>;
     const recruitment = <div id={"Recruitment"}><Recruitment/></div>;
     const navigation = [
       {
@@ -52,6 +54,7 @@ class HomePage extends React.Component {
       <div>
         <Header navigation={navigation}/>
         <Image src={banner}/>
+        {welcome}
         {statistics}
         {whatWeDo}
         {recruitment}
