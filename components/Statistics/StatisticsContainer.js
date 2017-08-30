@@ -35,9 +35,9 @@ class StatisticsContainer extends React.Component {
           <h1 className={`${font.h1} ${s.number}`}>
             {this.props.number}
           </h1>
-          <h2 className={`${font.h2} ${s.description}`}>
+          <h3 className={`${font.h3} ${s.description}`}>
             {this.props.description}
-          </h2>
+          </h3>
           <img src={this.props.src} className={s.icon}/>
         </div>
       );
