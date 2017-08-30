@@ -1,5 +1,6 @@
 .header {
   text-align:center;
+  margin-bottom: 0;
 }
 
 .fullcontainer {
@@ -10,6 +11,10 @@
   margin: 20px;
 }
 
+.block {
+  margin: 10px;
+}
+
 @media screen and (min-width: 930px) {
   .container {
     height: 100%;
@@ -18,7 +23,12 @@
     flex-direction: column;
     margin: 0;
   }
+
+  .block {
+    margin: 30px;
+  }
 }
+
 
 .title {
   text-align:center;

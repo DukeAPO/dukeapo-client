@@ -170,7 +170,7 @@ class WhatWeDo extends React.Component {
     const blocks = [];
     data.forEach(function(block){
       blocks.push(
-        <div style={{margin:'30px'}}>
+        <div className={s.block}>
           <WhatWeDoBlock title={block.title} src={block.src}
             information={block.information} color={block.color}
             orientation={block.orientation}/>
