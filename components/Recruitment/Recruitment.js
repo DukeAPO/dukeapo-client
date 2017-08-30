@@ -42,7 +42,7 @@ class RecruitmentDescription extends React.Component {
     }
     const listServeButton = (
       <td>
-        <FlatButton style={listServeButtonStyle} fullWidth={true}>
+        <FlatButton style={listServeButtonStyle} fullWidth={true} href={'http://eepurl.com/cwEmij'}>
           <h4 className={s.buttontext}>
               Join our list serv
           </h4>
