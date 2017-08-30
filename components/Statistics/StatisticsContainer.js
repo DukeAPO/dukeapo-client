@@ -19,7 +19,7 @@ class StatisticsContainer extends React.Component {
                   <h1 className={`${font.h1} ${s.number}`}>
                     {this.props.number}
                   </h1>
-                  <h2 className={s.description}>
+                  <h2 className={`${font.h2} ${s.description}`}>
                     {this.props.description}
                   </h2>
                 </tr>
@@ -35,7 +35,7 @@ class StatisticsContainer extends React.Component {
           <h1 className={`${font.h1} ${s.number}`}>
             {this.props.number}
           </h1>
-          <h2 className={s.description}>
+          <h2 className={`${font.h2} ${s.description}`}>
             {this.props.description}
           </h2>
           <img src={this.props.src} className={s.icon}/>

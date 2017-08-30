@@ -12,15 +12,7 @@
 .description {
   font-family: "Avenir";
   font-weight: normal;
-  font-size: 24pt;
   color: #FFFFFF;
-}
-
-@media screen and (max-width: 470px) {
-
-  .description {
-    font-size: 16pt;
-  }
 }
 
 .descriptioncol {

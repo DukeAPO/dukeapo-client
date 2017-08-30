@@ -1,7 +1,4 @@
 .h1, .h2, .h3, .h4, .p {
-  word-break: normal;
-  white-space: normal;
-  line-height: normal;
   color: #4A4A4A; /* Gray */
 }
 
@@ -41,7 +38,11 @@
   font-weight: normal;
   /* (24-16)/(1280-470)*(100vw - 1280px) + 24px */
   font-size: 24px;
-  font-size: calc(0.99vw + 11.4px)
+  font-size: calc(0.99vw + 11.4px);
+  word-break: normal;
+  white-space: normal;
+  line-height: normal;
+
 }
 
 @media screen and (max-width: 470px) {
