@@ -2,20 +2,21 @@
     background: white;
     overflow: auto;
     text-align: center;
+	padding: 0 0 75px 0;
 }
 
 .bodyText{
-	text-align: center;
-	padding-left: 20vw;
-	width: 50%;
+	
 }
 
 .welcome{
 	font-family: "Helvetica";
 	font-weight: lighter;
 	color: #4A4A4A;
-	text-align: center;
-	display: inline-block;
+	margin-top: 0px;
+	margin-right: 180px;
+	margin-bottom: 16px;
+	margin-left: 180px;
 }
 .title {
   font-family: "Helvetica";
@@ -24,9 +25,13 @@
   color: #4A4A4A;
 }
 
-.welcomeButton {
-  width: 242px;
-  height: 40px;
-  border-radius: 16px; /*check*/
-  color: gray;
+.buttonText{
+	font-size: 20pt;
+	font-family: "Helvetica";
+	font-weight: Lighter;
+	color: #4A4A4A;
+	padding: 0;
+	margin: 0;
+	border-radius: inherit;
+	border: inherit;
 }
