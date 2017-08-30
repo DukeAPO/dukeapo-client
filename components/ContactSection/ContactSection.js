@@ -3,7 +3,7 @@ import ResizeableComponent from '../ResizeableComponent';
 import font from '../CSS/Font.css';
 import shadow from '../CSS/ImageShadow.css';
 import classes from './ContactSection.css';
-import diaperbank from '../Assets/apoNCDiaperBank.png';
+import diaperbank from '../Assets/ApoNCDiaperBank.png';
 
 const widthCutoff = 760;
 
