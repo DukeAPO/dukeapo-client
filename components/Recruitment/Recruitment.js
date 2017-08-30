@@ -134,7 +134,7 @@ class RecruitmentContainer extends React.Component {
       );
     }
     return (
-      <Table style={{backgroundColor: '#d3d3d3'}} selectable={false}>
+      <Table style={{backgroundColor: '#D8D8D8'}} selectable={false}>
         <TableBody displayRowCheckbox={false}>
           {order}
         </TableBody>

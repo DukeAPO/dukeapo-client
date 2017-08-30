@@ -16,6 +16,7 @@ import Statistics from '../../components/Statistics';
 import WhatWeDo from '../../components/WhatWeDo';
 import Welcome from '../../components/Welcome';
 import banner from '../../components/Assets/DukeApoBanner.png';
+import ContactSection from '../../components/ContactSection';
 import Recruitment from '../../components/Recruitment';
 
 class HomePage extends React.Component {
@@ -24,14 +25,15 @@ class HomePage extends React.Component {
   };
 
   render() {
-    const welcome = <div id={"Welcome"}><Welcome/></div>;
+    const welcome = <div id={"Home"}><Welcome/></div>;
     const statistics = <div id={"Stats"}><Statistics/></div>;
     const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>;
     const recruitment = <div id={"Recruitment"}><Recruitment/></div>;
+    const contactSection = <div id={"ContactSection"}><ContactSection/></div>;
     const navigation = [
       {
         label: 'Home',
-        scrollToId: ''
+        scrollToId: 'Home'
       },
       {
         label: 'Stats',
@@ -47,7 +49,7 @@ class HomePage extends React.Component {
       },
       {
         label: 'Contact',
-        scrollToId: ''
+        scrollToId: 'ContactSection'
       }
     ];
     return (
@@ -58,6 +60,7 @@ class HomePage extends React.Component {
         {statistics}
         {whatWeDo}
         {recruitment}
+        {contactSection}
         <Footer/>
       </div>
     );
