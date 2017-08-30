@@ -9,7 +9,7 @@ class Welcome extends React.Component {
         <h1 className = {w.title} class="title">
           Welcome to Duke Alpha Phi Omega!
         </h1>
-        <p className = {}>
+        <p className = {classes.paragraph}>
         The Lambda Nu Chapter of Alpha Phi Omega, Duke’s only co-ed service fraternity, was founded in 1955. 
         We consist of both Pratt and Trinity students alike and contain members of Greek life, Quidditch, 
         student government, and more. Despite our differences, we’re one big family that serves together, 
