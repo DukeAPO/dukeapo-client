@@ -1,5 +1,6 @@
 import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
+import font from '../CSS/Font.css';
 import s from './Statistics.css';
 import StatisticsContainer from './StatisticsContainer.js';
 import ApoClock from '../Assets/ApoClock.png';
@@ -123,7 +124,7 @@ class Statistics extends React.Component {
 
     return (
       <div className={s.container}>
-        <h1 className={s.title}>
+        <h1 className={`${font.h1} ${s.title}`}>
           Numbers From Last Semester
         </h1>
         {order}

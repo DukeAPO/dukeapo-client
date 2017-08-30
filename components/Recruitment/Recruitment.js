@@ -1,5 +1,6 @@
 import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
+import font from '../CSS/Font.css';
 import s from './Recruitment.css';
 import shadow from '../CSS/ImageShadow.css';
 import broomball from '../Assets/Broomball.jpg';
@@ -25,7 +26,7 @@ class RecruitmentDescription extends React.Component {
     const widthCutoff = 500;
     const facebookButton = (
       <td>
-        <h4 className={s.buttontext}>
+        <h4 className={`${font.h4} ${s.buttontext}`}>
           Follow us on &nbsp;
           <a href={'https://www.facebook.com/DukeAlphaPhiOmega/'}>
             <Ripples className={s.ripples}>
@@ -42,8 +43,8 @@ class RecruitmentDescription extends React.Component {
     }
     const listServeButton = (
       <td>
-        <FlatButton style={listServeButtonStyle} fullWidth={true}>
-          <h4 className={s.buttontext}>
+        <FlatButton style={listServeButtonStyle} fullWidth={true} href={'http://eepurl.com/cwEmij'}>
+          <h4 className={`${font.h4} ${s.buttontext}`}>
               Join our list serv
           </h4>
         </FlatButton>
@@ -75,10 +76,10 @@ class RecruitmentDescription extends React.Component {
 
     return (
       <div className={s.container}>
-        <h2 className={s.subheader}>
+        <h2 className={`${font.h2} ${s.subheader}`}>
           {this.props.subheader}
         </h2>
-        <p className={s.description}>
+        <p className={`${font.p} ${s.description}`}>
           {this.props.description}
         </p>
         {buttonOrder}
@@ -170,7 +171,7 @@ class Recruitment extends React.Component {
 
     return (
       <div>
-        <h1 className={s.header}>
+        <h1 className={`${font.h1} ${s.header}`}>
           Recruitment
         </h1>
         <RecruitmentContainer subheader={data.subheader}

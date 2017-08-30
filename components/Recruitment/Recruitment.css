@@ -1,29 +1,15 @@
 .header {
-  font-family: "Helvetica";
   text-align:center;
-  font-size: 48pt;
-  color: #4A4A4A;
-  font-weight: lighter;
 }
 
 .subheader {
-  font-family: "Helvetica";
-  font-size: 30pt;
-  color: #4A4A4A;
-  font-weight: lighter;
+  margin-left: 5px;
 }
 
 .description {
-  font-family: "Palatino";
-  font-weight: normal;
-  font-size: 18pt;
-  color: #4A4A4A;
   margin: 0;
-  padding: 5px;
-  word-break: normal;
-  white-space: normal;
   width: inherit;
-  line-height: normal;
+  padding: 5px;
 }
 
 .image {
@@ -44,21 +30,25 @@
   padding: 10px 30px 30px 30px;
 }
 
+
 @media screen and (min-width: 930px) {
   .container {
     padding: 30px;
   }
 }
 
+@media screen and (max-width: 929px) {
+  .subheader {
+    margin: 5px;
+  }
+}
+
 .buttontext {
-  font-size: 20pt;
-  font-family: "Helvetica";
-  font-weight: lighter;
-  color: #4A4A4A;
   padding: 0;
   margin: 0;
   border-radius: inherit;
   border: inherit;
+  font-weight: lighter;
 }
 
 .ripples {

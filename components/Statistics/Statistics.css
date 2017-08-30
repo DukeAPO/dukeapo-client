@@ -7,13 +7,6 @@
 .title {
   font-family: "Avenir";
   font-weight: medium;
-  font-size: 48pt;
   color: #FFFFFF;
   padding: 10px;
-}
-
-@media screen and (max-width: 470px) {
-  .title {
-    font-size: 24pt;
-  }
 }
