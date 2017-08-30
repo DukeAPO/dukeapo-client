@@ -30,6 +30,17 @@
   padding: 10px 30px 30px 30px;
 }
 
+.facebookButtonContainer{
+  margin: 0;
+}
+
+tr.space > td {
+  padding-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
 
 @media screen and (min-width: 930px) {
   .container {
@@ -43,21 +54,8 @@
   }
 }
 
-.buttontext {
-  padding: 0;
-  margin: 0;
-  border-radius: inherit;
-  border: inherit;
-  font-weight: lighter;
-}
-
-.ripples {
-  vertical-align: top;
-  height: 32px;
-  width: 32px;
-  vertical-align: middle;
-}
-
-tr.space > td {
-  padding-bottom: 10px;
+@media screen and (max-width: 470px) {
+  .table {
+    width: 50%;
+  }
 }

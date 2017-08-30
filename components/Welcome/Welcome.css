@@ -1,35 +1,39 @@
-.container {
+.titleContainer {
     background: white;
-    overflow: auto;
     text-align: center;
-	padding: 0 0 75px 0;
 }
 
-.bodyText{
-	
+.welcomeContainer {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .welcome{
 	font-family: "Helvetica";
 	font-weight: lighter;
-	color: #4A4A4A;
-	margin-top: 0px;
-	margin-right: 180px;
-	margin-bottom: 16px;
-	margin-left: 180px;
-}
-.title {
-  font-family: "Helvetica";
-  font-weight: lighter;
-  font-size: 48pt;
-  color: #4A4A4A;
 }
 
-.buttonText{
-	font-size: 20pt;
-	font-family: "Helvetica";
-	font-weight: Lighter;
-	color: #4A4A4A;
-	padding: 0;
-	margin: 0;
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  display: inline-block;
+  padding: 5px;
+}
+
+@media screen and (max-width: 470px) {
+  .title {
+    font-size: 24px;
+  }
 }
