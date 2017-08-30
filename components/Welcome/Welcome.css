@@ -1,17 +1,30 @@
 .container {
-    background: #065bbe;
+    background: white;
     overflow: auto;
     text-align: center;
 }
 
-.title {
-  font-family: "Avenir";
-  font-weight: medium;
-  font-size: 48pt;
-  color: #FFFFFF;
+.bodyText{
+	text-align: center;
+	padding-left: 20vw;
+	width: 50%;
 }
 
-.welcome-button {
+.welcome{
+	font-family: "Helvetica";
+	font-weight: lighter;
+	color: #4A4A4A;
+	text-align: center;
+	display: inline-block;
+}
+.title {
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 48pt;
+  color: #4A4A4A;
+}
+
+.welcomeButton {
   width: 242px;
   height: 40px;
   border-radius: 16px; /*check*/
