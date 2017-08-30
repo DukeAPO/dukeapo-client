@@ -25,18 +25,15 @@ class HomePage extends React.Component {
   };
 
   render() {
-    const welcome = <div id={"Welcome"}><Welcome/></div>;
+    const welcome = <div id={"Home"}><Welcome/></div>;
     const statistics = <div id={"Stats"}><Statistics/></div>;
     const whatWeDo = <div id={"WhatWeDo"}><WhatWeDo/></div>;
-<<<<<<< HEAD
-    const contactSection = <div id={"ContactSection"}><ContactSection/></div>;
-=======
->>>>>>> deb6842146fc83ee3cedefa370efb4541c041486
     const recruitment = <div id={"Recruitment"}><Recruitment/></div>;
+    const contactSection = <div id={"ContactSection"}><ContactSection/></div>;
     const navigation = [
       {
         label: 'Home',
-        scrollToId: ''
+        scrollToId: 'Home'
       },
       {
         label: 'Stats',
@@ -62,8 +59,8 @@ class HomePage extends React.Component {
         {welcome}
         {statistics}
         {whatWeDo}
-        {contactSection}
         {recruitment}
+        {contactSection}
         <Footer/>
       </div>
     );
