@@ -27,7 +27,7 @@ class Welcome extends React.Component{
 				{text.description}
 			</p>
 		</div>
-        <FlatButton style={listServeButtonStyle} fullWidth={true} href={'eepurl.com/cwEmij'}>
+        <FlatButton style={listServeButtonStyle} fullWidth={false} href={'http://eepurl.com/cwEmij'}>
 			<h4 className={'${font.h4} ${w.buttonText}'}>
 				Join our list serv
 			</h4>
