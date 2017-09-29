@@ -1,54 +1,49 @@
-.container {
-	width: 100%;
-	height: 100%;
+..container {
 	background-color: #4A90E2;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	padding-bottom: 10px;
 }
 
-.smallContainer {
-	padding: 30px 0;
-
+.contactHeaderContainer {
+	text-align: center;
+	padding: 10px;
 }
 
 .contactHeader {
-	line-height: 2em;
-	text-align: center;
 	color: #FFFFFF;
-	font-family: "Helvetica", lighter;
-	font-size: 56px;
-	letter-spacing: 5px;
 	margin: 0;
 	padding: 0;
-	text-align: center;
 }
 
-.contactText {
-	font-family: "Palatino", regular;
-	font-size: 18px;
-	color: #D8D8D8;
-	line-height: 2em;
-	margin: 0 12vw;
-	text-align: left;
+.table {
+	background-color: #D8D8D8;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 80%;
+	padding: 50px;
 }
 
 .image {
-	width: 25vw;
-	height: auto;
+	max-width: 100%;
+	max-height: 100%;
 }
 
-.tr {
-	text-align: right;
-	
+.descriptionContainer {
+	width: 70%;
+  margin: 0 auto;
 }
 
-.thLeft {
-	text-align: right;
-	padding-right: 80px;
+.td {
+	max-width: 50%;
 	width: 50%;
 }
 
-.thRight {
-	text-align: left;
+tr.space > td {
+  padding-bottom: 30px;
 }
 
+@media screen and (max-width: 760px) {
+  .table {
+		width: 85%;
+		padding: 10px;
+  }
+}

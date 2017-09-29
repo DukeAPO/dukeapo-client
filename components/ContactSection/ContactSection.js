@@ -1,26 +1,67 @@
 import React from 'react';
+import ResizeableComponent from '../ResizeableComponent';
+import font from '../CSS/Font.css';
+import shadow from '../CSS/ImageShadow.css';
 import classes from './ContactSection.css';
-import diaperbank from '../Assets/apoNCDiaperBank.png';
+import diaperbank from '../Assets/ApoNCDiaperBank.png';
 
-class ContactSection extends React.Component {
+const widthCutoff = 760;
+
+class ContactSection extends ResizeableComponent {
   render() {
+    var order = undefined;
+    const image = (
+      <div className={`${shadow.shadow}`}>
+        <img className={classes.image} src={diaperbank} />
+      </div>
+    );
+    const description = (
+      <div className={classes.descriptionContainer}>
+        <p className={`${font.p}`}>
+          We&#39;re all about working with our North Carolina community.
+          To share your event, cause, or organization, please fill out
+          this Google Form <a href="https://docs.google.com/forms/d/1wKdIaGrDnlfOUKjxTI6Fq8XT_y2Q6oTwmKx9Z9yaUXk/viewform?edit_requested=true" target="_blank">
+          here</a>.
+        </p>
+      </div>
+    );
+    if(this.state.width < widthCutoff){
+      order = (
+        <table className={classes.table}>
+          <tr className={classes.space}>
+            <td>
+              {image}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {description}
+            </td>
+          </tr>
+        </table>
+      );
+    }
+    else{
+      order = (
+        <table className={classes.table}>
+          <tr>
+            <td className={classes.td}>
+              {image}
+            </td>
+            <td className={classes.td}>
+              {description}
+            </td>
+          </tr>
+        </table>
+      );
+    }
     return (
-      <div>
-        <div className={classes.container}>
-          <h1 className={classes.contactHeader}>Contact</h1>
-          <table className={classes.table} border={"1"} style={{width:'100%'}}>
-            <tr className={classes.tr}>
-              <th className={classes.thLeft}><img className={classes.image} src={diaperbank} /></th>
-              <th className={classes.thRight}> 
-              <p className={classes.contactText}>
-                We&#39;re all about working with <br /> our North Carolina community. <br /> To share your event, cause, 
-                or <br /> organization, please fill out this <br /> Google Form  <a href="https://docs.google.com/forms/d/
-                1wKdIaGrDnlfOUKjxTI6Fq8XT_y2Q6oTwmKx9Z9yaUXk/viewform?edit_requested=true" target="_blank">here.</a>                  </p>
-              </th>
-            </tr>
-          </table>
-          <div className={classes.smallContainer}>
-          </div>
+      <div className={classes.container}>
+        <div className={classes.contactHeaderContainer}>
+          <h1 className={`${font.h1} ${classes.contactHeader}`}>Contact</h1>
+        </div>
+        <div>
+          {order}
         </div>
       </div>
     );
