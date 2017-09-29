@@ -1,14 +1,18 @@
 .header {
-  font-family: "Avenir";
-  font-weight: medium;
-  font-size: 36pt;
-  color: #000;
   text-align:center;
-  font-size: 48pt;
+  margin-bottom: 0;
+}
+
+.fullcontainer {
+  padding: 0px 10px 20px 10px;
 }
 
 .container {
   margin: 20px;
+}
+
+.block {
+  margin: 10px;
 }
 
 @media screen and (min-width: 930px) {
@@ -19,11 +23,15 @@
     flex-direction: column;
     margin: 0;
   }
+
+  .block {
+    margin: 30px;
+  }
 }
+
 
 .title {
   text-align:center;
-  font-family: "Avenir";
   color: #FFF;
   border: solid #000;
   border-radius: 10px 10px 0px 0px;
@@ -33,16 +41,9 @@
 }
 
 .description {
-  font-family: "Palatino";
-  line-height: normal;
   margin: 0;
   padding: 5px;
-  word-break: normal;
-  white-space: normal;
   width: inherit;
-  font-weight: normal;
-  font-size: 18pt;
-  color: #4A4A4A;
 }
 
 .descriptioncontainer {

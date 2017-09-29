@@ -1,29 +1,18 @@
 .header {
-  font-family: "Helvetica";
   text-align:center;
-  font-size: 48pt;
-  color: #4A4A4A;
-  font-weight: lighter;
+  background-color: #D8D8D8;
+  padding-top: 10px;
+  margin-bottom: 0;
 }
 
 .subheader {
-  font-family: "Helvetica";
-  font-size: 30pt;
-  color: #4A4A4A;
-  font-weight: lighter;
+  margin-left: 5px;
 }
 
 .description {
-  font-family: "Palatino";
-  font-weight: normal;
-  font-size: 18pt;
-  color: #4A4A4A;
   margin: 0;
-  padding: 5px;
-  word-break: normal;
-  white-space: normal;
   width: inherit;
-  line-height: normal;
+  padding: 5px;
 }
 
 .image {
@@ -44,30 +33,32 @@
   padding: 10px 30px 30px 30px;
 }
 
+.facebookButtonContainer{
+  margin: 0;
+}
+
+tr.space > td {
+  padding-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
+
 @media screen and (min-width: 930px) {
   .container {
     padding: 30px;
   }
 }
 
-.buttontext {
-  font-size: 20pt;
-  font-family: "Helvetica";
-  font-weight: lighter;
-  color: #4A4A4A;
-  padding: 0;
-  margin: 0;
-  border-radius: inherit;
-  border: inherit;
+@media screen and (max-width: 929px) {
+  .subheader {
+    margin: 5px;
+  }
 }
 
-.ripples {
-  vertical-align: top;
-  height: 32px;
-  width: 32px;
-  vertical-align: middle;
-}
-
-tr.space > td {
-  padding-bottom: 10px;
+@media screen and (max-width: 470px) {
+  .table {
+    width: 50%;
+  }
 }

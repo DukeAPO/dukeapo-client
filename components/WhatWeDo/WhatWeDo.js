@@ -1,5 +1,6 @@
 import React from 'react';
 import {Table, TableBody, TableRow, TableRowColumn} from 'material-ui/Table';
+import font from '../CSS/Font.css';
 import s from './WhatWeDo.css';
 import shadow from '../CSS/ImageShadow.css';
 import semi from '../Assets/SemiFall16.jpg';
@@ -10,11 +11,11 @@ class WhatWeDoDescription extends React.Component {
   render() {
     return (
       <div className={s.container}>
-        <h3 className={`${s.title}`}
+        <h3 className={`${font.h3} ${s.title}`}
           style={{backgroundColor: this.props.color}}>
           {this.props.title}
         </h3>
-        <p className={`${s.description} ${s.descriptioncontainer}`} style={{flexGrow: '1'}}>
+        <p className={`${font.p} ${s.description} ${s.descriptioncontainer}`} style={{flexGrow: '1'}}>
           {this.props.information}
         </p>
       </div>
@@ -169,7 +170,7 @@ class WhatWeDo extends React.Component {
     const blocks = [];
     data.forEach(function(block){
       blocks.push(
-        <div style={{margin:'30px'}}>
+        <div className={s.block}>
           <WhatWeDoBlock title={block.title} src={block.src}
             information={block.information} color={block.color}
             orientation={block.orientation}/>
@@ -179,10 +180,10 @@ class WhatWeDo extends React.Component {
 
     return (
       <div>
-        <h1 className={s.header}>
+        <h1 className={`${font.h1} ${s.header}`}>
           Why APO?
         </h1>
-        <div style={{padding:'0px 10px 20px 10px'}}>
+        <div className={`${s.fullcontainer}`}>
           {blocks}
         </div>
       </div>
