@@ -8,6 +8,7 @@ import broomball from '../Assets/Broomball.jpg';
 import facebookImage from '../Assets/Facebook.png';
 import SocialButton from '../SocialButton';
 import JoinListServeButton from '../JoinListServeButton';
+import PledgingButton from '../PledgingButton';
 
 class RecruitmentImage extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class RecruitmentImage extends React.Component {
     );
   }
 }
+
 
 class RecruitmentDescription extends React.Component {
 
@@ -36,6 +38,18 @@ class RecruitmentDescription extends React.Component {
     const listServeButton = (
       <td>
           <JoinListServeButton />
+      </td>
+    );
+    const pledgingButton = (
+      <td> 
+          <PledgingButton />
+          <input type={button} onclick={growDiv()} value={'Read more'} id={more-button}></input>
+
+          <div id={grow}>
+            <div className={measuringWrapper}>
+              <div className={text}> Here is some more text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae urna nulla. Vivamus a purus mi. In hac habitasse platea dictumst. In ac tempor quam. Vestibulum eleifend vehicula ligula, et cursus nisl gravida sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.></div>
+            </div>
+          </div>
       </td>
     );
     var buttonOrder = undefined;
@@ -171,3 +185,7 @@ class Recruitment extends React.Component {
 }
 
 export default Recruitment;
+
+
+
+
