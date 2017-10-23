@@ -1,0 +1,6 @@
+{
+  "name": "SizeComponent",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SizeComponent.js"
+}

@@ -1,0 +1,49 @@
+.routes-home-statistics-container {
+    background: #065bbe;
+    overflow: auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.routes-home-statistics-title {
+  font-family: "Avenir";
+  font-weight: medium;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.routes-home-statistics-inner-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.routes-home-statistics-number {
+  font-family: "Avenir";
+  font-weight: medium;
+  color: #FFFFFF;
+}
+
+.routes-home-statistics-description {
+  font-family: "Avenir";
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
+.routes-home-statistics-description-col {
+  text-align: left;
+}
+
+.routes-home-statistics-row {
+  width: 50%;
+  max-width: 50%;
+}
+
+.routes-home-statistics-icon {
+  height: 128px;
+  width: 128px;
+}
+
+.routes-home-statistics-table {
+  width: 100%;
+}

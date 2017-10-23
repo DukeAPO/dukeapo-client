@@ -1,0 +1,22 @@
+.routes-home-header-label {
+  color: black;
+  padding: 1.5vw;
+  text-decoration: none;
+  font-family: "Avenir", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.routes-home-header-logo {
+	width: 40%;
+}
+
+.routes-home-header-container {
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.routes-home-header-head {
+  width: 100%;
+}

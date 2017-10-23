@@ -1,0 +1,14 @@
+.routes-home-socialbutton-image {
+  vertical-align: top;
+}
+
+.routes-home-socialbutton-round {
+  -moz-border-radius: 7.5px;
+  border-radius: 7.5px;
+}
+
+.routes-home-socialbutton-ripples {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}

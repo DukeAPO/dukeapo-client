@@ -1,0 +1,50 @@
+.routes-home-contact-container {
+	background-color: #4A90E2;
+	padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.routes-home-contact-header-container {
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.routes-home-contact-header {
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+.routes-home-contact-table {
+	background-color: #D8D8D8;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 80%;
+	padding: 50px;
+}
+
+.routes-home-contact-description-container {
+	width: 70%;
+  margin: 0 auto;
+}
+
+.routes-home-contact-td {
+	max-width: 50%;
+	width: 50%;
+}
+
+tr.routes-home-contact-space > td {
+  padding-bottom: 30px;
+}
+
+.routes-home-contact-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .routes-home-contact-table {
+		width: 85%;
+		padding: 10px;
+  }
+}

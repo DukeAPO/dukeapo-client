@@ -1,0 +1,65 @@
+.routes-home-recruitment-container {
+  padding-bottom: 10px;
+  background-color: #D8D8D8;
+}
+
+.routes-home-recruitment-header {
+  text-align:center;
+  background-color: #D8D8D8;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.routes-home-recruitment-subheader {
+  margin-left: 5px;
+}
+
+.routes-home-recruitment-description {
+  margin: 0;
+  width: inherit;
+  padding: 5px;
+}
+
+.routes-home-recruitment-image {
+  vertical-align: top;
+}
+
+.routes-home-recruitment-info-container {
+  margin: 20px;
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px 30px 10px 30px;
+}
+
+.routes-home-recruitment-facebook-button-container {
+  margin: 0;
+}
+
+tr.routes-home-recruitment-space > td {
+  padding-bottom: 10px;
+}
+
+.routes-home-recruitment-table {
+  width: 100%;
+}
+
+@media screen and (min-width: 930px) {
+  .routes-home-recruitment-info-container {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 929px) {
+  .routes-home-recruitment-subheader {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .routes-home-recruitment-table {
+    width: 50%;
+  }
+}

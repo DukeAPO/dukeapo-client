@@ -1,0 +1,54 @@
+.routes-home-whyapo-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.routes-home-whyapo-header-container {
+  text-align:center;
+}
+
+.routes-home-whyapo-info-container {
+  padding: 0px 10px 0px 10px;
+}
+
+.routes-home-whyapo-inner-container {
+  margin: 20px;
+}
+
+.routes-home-whyapo-block {
+  margin: 0;
+}
+
+.routes-home-whyapo-description-title {
+  text-align:center;
+  color: #FFF;
+  border: solid #000;
+  border-radius: 10px 10px 0px 0px;
+  border-width: 1px 1px 0px 1px;
+  margin: 0;
+  padding: 5px;
+}
+
+.routes-home-whyapo-description-text {
+  margin: 0;
+  padding: 5px;
+  width: inherit;
+  border: solid #000;
+  border-radius: 0px 0px 10px 10px;
+  border-width: 0px 1px 1px 1px;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 930px) {
+  .routes-home-whyapo-inner-container {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .routes-home-whyapo-block {
+    margin: 30px;
+  }
+}

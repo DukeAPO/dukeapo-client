@@ -1,0 +1,41 @@
+.routes-home-welcome-title-container {
+    background: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.routes-home-welcome-text-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.routes-home-welcome-text {
+	font-family: "Helvetica";
+	font-weight: lighter;
+}
+
+.routes-home-welcome-button-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.routes-home-welcome-button-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.routes-home-welcome-button-li {
+  display: inline-block;
+  padding: 5px;
+}
+
+@media screen and (max-width: 470px) {
+  .routes-home-welcome-title {
+    font-size: 23px;
+  }
+}

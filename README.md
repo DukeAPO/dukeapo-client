@@ -1,7 +1,6 @@
 # Duke APO Website
-The Duke APO website currently deployed can be found here: [dukeapo.org](https://dukeapo.org/)
-
-Original [readme](https://github.com/kriasoft/react-static-boilerplate/blob/master/README.md)
+This webapp was generate with the generator described in README_GENERATOR.md. The
+Duke APO website currently deployed can be found here: [dukeapo.org](https://dukeapo.org/)
 
 > The most annoying part of any project is getting things installed so I'll do a quick write-up of everything I had to do to get started. These instructions are for Mac.
 
@@ -33,7 +32,7 @@ First, open up Terminal. You can just do `CMD` + `Space` and type "Terminal" in 
 
 Open up Terminal and type in `git`. You'll probably have to install Apple's xcode command line tools.
 
-Make a new folder where you want to hold all your GitHub projects. You can do this by opening up Terminal, typing `cd` to go to the highest level folder in your computer (so you have access to everything). Type `ls` to see what folders are around. Some you may recognize are `Desktop` or `Applications`. I just make a `Github` folder here by typing `mkdir Github` (make a directory named Github). Then go into the folder by typing `cd Github` (changing directory to the Github folder, note: "directory" is just another name for a folder. idk why). 
+Make a new folder where you want to hold all your GitHub projects. You can do this by opening up Terminal, typing `cd` to go to the highest level folder in your computer (so you have access to everything). Type `ls` to see what folders are around. Some you may recognize are `Desktop` or `Applications`. I just make a `Github` folder here by typing `mkdir Github` (make a directory named Github). Then go into the folder by typing `cd Github` (changing directory to the Github folder, note: "directory" is just another name for a folder. idk why).
 
 Now that you're inside the folder, `clone` the project from our central GitHub repository down to your computer:
 
@@ -49,11 +48,11 @@ Note: do all installation in the `dukeapo-client` folder because all the install
 
 ### Homebrew
 
-First thing you need is **homebrew** which makes installing *other* stuff more easy. Go to their [website](https://brew.sh/) and copy the Terminal script and hit `enter` to run it. 
+First thing you need is **homebrew** which makes installing *other* stuff more easy. Go to their [website](https://brew.sh/) and copy the Terminal script and hit `enter` to run it.
 
 ### Yarn
 
-Yarn is used for dependency management. "Dependency management" just means making sure you have all the ingredients you need to work on a recipe. For instance, you can't run a React project if you don't have React. So React is a dependency. 
+Yarn is used for dependency management. "Dependency management" just means making sure you have all the ingredients you need to work on a recipe. For instance, you can't run a React project if you don't have React. So React is a dependency.
 
 Install Yarn with:
 
@@ -71,7 +70,7 @@ Woo nice, you're done with installation!
 
 ## Writing code
 
-You'll want a text editor for writing code. I recommend using Sublime Text which is free. 
+You'll want a text editor for writing code. I recommend using Sublime Text which is free.
 
 ## Running the project
 
@@ -101,7 +100,7 @@ unit tests make sure that the website loads as expected
 
 Whenever you make changes and think they look good, ask another member of the team to take a look at your code in case there's any bugs or slip ups you missed. If they say it looks good, feel free to publish.
 
-First, install Firebase on Terminal: 
+First, install Firebase on Terminal:
 
 ```
 npm install -g firebase-tools
@@ -125,7 +124,7 @@ $ firebase deploy             # Deploys public folder to firebase
 
 > (Optional): list branches with: `git branch`, change branches with: `git checkout <nameOfBranch>`
 
-3. Make some changes. 
+3. Make some changes.
 
 > (Optional): list any files you've modified with: `git st` (short for `git status`), look at specific changes you've made to these files with: `git diff`
 
@@ -133,7 +132,7 @@ $ firebase deploy             # Deploys public folder to firebase
 
 5. Run `yarn test` to make sure all unit tests pass. Fix any errors.
 
-6. Add your changed files to the staging area: `git add <nameOfFile>` To figure out what files you changed, type `git status` and copy paste whichever ones you want to upload. 
+6. Add your changed files to the staging area: `git add <nameOfFile>` To figure out what files you changed, type `git status` and copy paste whichever ones you want to upload.
 
 7. Commit these changes with a message describing what you did: `git commit -m "added new title"`
 
@@ -144,11 +143,11 @@ $ firebase deploy             # Deploys public folder to firebase
 
 ### Step 2: Code review
 
-1. Make a pull request from your branch into master (it's a button on GitHub, ask Brian). Write a description and assign a reviewer(s) to look it over. 
+1. Make a pull request from your branch into master (it's a button on GitHub, ask Brian). Write a description and assign a reviewer(s) to look it over.
 
 2. Read comments. Make any changes.
 
-3. Lint and test as before. 
+3. Lint and test as before.
 
 3. `git add <stuff>` + `git commit -m "message goes here"` + `git push origin <nameOfBranch>` as before.
 
@@ -156,7 +155,7 @@ $ firebase deploy             # Deploys public folder to firebase
 
 ### Step 3: Move your code into master
 
-1. Hit `squash and merge` button on GitHub. 
+1. Hit `squash and merge` button on GitHub.
 
 2. Delete your branch.
 
