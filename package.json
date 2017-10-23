@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "(sh -ac '. .env; react-scripts build') && yarn run delete-map-files && yarn run delete-references-to-map-files",
+    "build": "react-scripts build && yarn run delete-map-files && yarn run delete-references-to-map-files",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "delete-map-files": "find ./build -name '*.map' -delete",
