@@ -68,10 +68,6 @@ You'll also need **Node**, which runs our project. Just google "install node" an
 
 Woo nice, you're done with installation!
 
-## Env File
-
-The env file contains environment variables which are private to DukeAPO. Ask for the file from a project admin and copy the cotents into a .env file in the dukeapo-client directory. 
-
 ## Writing code
 
 You'll want a text editor for writing code. I recommend using Sublime Text which is free.
