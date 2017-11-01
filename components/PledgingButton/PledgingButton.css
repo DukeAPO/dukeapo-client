@@ -1,10 +1,11 @@
-#more-button{border-style:none;background:none;font:16px Serif;color:blue;margin: 0 0 10px 0;}
 
-#grow input:checked{color:red;}
+.more_button{border-style:none;background:none;font-size:40px;font-family:Helvetica;color:gray;margin: 0 0 10px 0;}
 
-#more-button:hover{color:black;}
+.grow input:checked{color:red;}
 
-#grow {
+.more_button:hover{color:black;}
+
+.grow {
     -moz-transition: height .5s;
     -ms-transition: height .5s;
     -o-transition: height .5s;
